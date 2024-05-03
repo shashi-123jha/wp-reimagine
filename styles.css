@@ -23,10 +23,10 @@ html, body{
    z-index: 1000;
 }
 #page1{
-   height: 90vh;
+   height: 86vh;
    width: 100%;
    z-index: -9;
-   margin-top: 11.5vh;
+   margin-top: 11vh;
    padding: 2vw;
    background-color: #FCF5EB;
 }
@@ -35,9 +35,17 @@ html, body{
    display: flex;
    align-items: center;
  
+
 }
 
 
+
+
+#page2{
+   height: 100vh;
+   width: 100%;
+   background-color: rgb(107, 7, 42);
+}
 .connection1{
    height: 34vh;
    width: 100%;
@@ -52,11 +60,6 @@ html, body{
    height: 34vh;
    width: 100%;
    background-color: aliceblue;
-}
-#page2{
-   height: 100vh;
-   width: 100%;
-   background-color: rgb(107, 7, 42);
 }
 
 #page3{
