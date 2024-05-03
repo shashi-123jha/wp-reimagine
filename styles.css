@@ -12,17 +12,27 @@ html, body{
     
 
  }
+ #main{
+   position: relative;
+   overflow: hidden;
+
+ }
 #nav-bar{
     height: 12vh;
     width: 100%;
     background-color: red;
+    position: fixed;
+    z-index: 9;
 }
  #page1{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background-color: royalblue;
+    z-index: -9;
+    margin-top: 12vh;
+   
 
  }
+
 
  .connection1{
     height: 34vh;
