@@ -4,3 +4,6 @@ const scroll = new LocomotiveScroll({
     smooth: true,
     lerp:0.1,
 });
+
+
+
