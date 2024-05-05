@@ -7,35 +7,69 @@
 html, body{
     height: 100%;
     width: 100%;
-    
-   
 
 }
 #main{
   position: relative;
   overflow: hidden;
   background-color: #FCF5EB;
+  z-index: 2;
 
 }
+
+#cursor{
+   height: 40px;
+   width: 40px;
+   background-color: #25d366;
+   border-radius: 50%;
+   position: fixed;
+   z-index: 9;
+   transition: all linear 0.08s;
+   align-items: center;
+   padding:5px
+   ;
+   margin: auto;
+
+}
+#cursor-blur{
+
+   height: 500px;
+   width: 500px;
+   background-color: #25d36561;
+   border-radius: 50%;
+   position: fixed;
+   filter: blur(80px);
+   z-index: -1;
+   transition: all linear 0.4s;
+}
+
+
+#cursor h5{
+   font: 80;
+   color: gray;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   
+   
+   
+}
+
+
 #nav-bar{
    height: 12vh;
    width: 100%;
    background-color: #FCF5EB;
    position: fixed;
-   z-index: 1000;
+   z-index: 1;
 }
 #page1{
    height: calc(100vh + 14vh);
    width: 100%;
-   z-index: -9;
+  
    background-color: #FCF5EB;
-  
-   
-   
-   
-   
 
-  
 }
 
 .carousel-inner {
@@ -54,30 +88,51 @@ html, body{
   
    
 }
-
-
-
-#page2{
-   height: calc(100vh + 14vh);
+#second {
+   color: black;
+   padding-right: 8vw;
+   padding-top: 10vh;
+   background-color:#FCF5EB ;
    width: 100vw;
-   background-color: #FCF5EB;
-  
+   height: 100vh;
 }
-.connection1{
-   height: 30vh;
+
+.elem {
+   height: 17vh;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
    width: 100%;
-   background-color: aquamarine
+   padding: 1.5vw 3vw;
+   padding-right: 0;
+   border-top: 1px solid #888;
 }
-#notes{
-   height: 30vh;
-   width: 100%;
-   background-color: rgb(73, 152, 12);
+
+.elem h1 {
+   text-transform: uppercase;
+   font-size: 4.6vw;
+   opacity: 0.8;
 }
-.connection2{
-   height: 30vh;
-   width: 100%;
-   background-color: rgb(180, 172, 18);
+
+.elemlast {
+   border-bottom: 1px solid #888;
 }
+
+.elem img {
+   opacity: 0;
+   pointer-events: none;
+   height: 140%;
+   z-index: 999;
+   position: absolute;
+   transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
 
 #page3{
    height:calc(100vh + 14vh);
@@ -91,6 +146,7 @@ html, body{
 #page3{
    display: flex;
    align-items: center;
+   justify-content: center;
    flex-direction: column;
     
    
@@ -148,13 +204,14 @@ html, body{
    width: 40%;
    color: wheat;
    
-   margin-right: 10%;
-
-   
-   
-   
+   margin-right: 10%;  
 }
 
+#page5{
+   height: calc(100vh + 14vh);
+   width: 100%;
+   background-color: #FCF5EB;
+}
 
 
 
