@@ -2,7 +2,7 @@
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    lerp:0.1,
+    lerp:0.3,
 });
 
 var crsr = document.querySelector("#cursor")
@@ -52,4 +52,34 @@ document.querySelectorAll(".elem").forEach(function (elem) {
         rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
       });
     });
+  });
+
+// logo animation 
+
+function breakTheText() {
+    var h2 = document.querySelector("#h11")
+var h2Text  = h2.textContent
+
+var splitedtext = h2Text.split("")
+
+var clutter =""
+
+splitedtext.forEach(function(elem){
+clutter += `<span>${elem}</span>`
+})
+h2.innerHTML = clutter
+
+  }
+
+  // we call the breakTheText()
+  breakTheText()
+
+   gsap.from("#h11 span", { 
+    y: 50, // End position along the x-axis
+    opacity:0,
+    duration:0.7,
+    delay:0.5,
+    stagger:0.15,
+
+   
   });

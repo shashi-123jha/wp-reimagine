@@ -23,8 +23,8 @@ html, body{
    background-color: #25d366;
    border-radius: 50%;
    position: fixed;
-   z-index: 9;
-   transition: all linear 0.08s;
+   z-index: 1000;
+   transition: all linear 0.08s ease-in-out;
    align-items: center;
    padding:5px
    ;
@@ -39,7 +39,7 @@ html, body{
    border-radius: 50%;
    position: fixed;
    filter: blur(80px);
-   z-index: -1;
+   z-index: -3;
    transition: all linear 0.4s;
 }
 
@@ -63,7 +63,111 @@ html, body{
    background-color: #FCF5EB;
    position: fixed;
    z-index: 1;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 2vw;
+   padding-right: 2vw;
 }
+
+
+#others{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4vw;
+   padding-left: 5vw;
+   
+
+}
+
+#logo{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+}
+
+#logo img {
+   font-size: 1.9vw;
+   font-size: 800;
+   margin-bottom: 0.8vw;
+
+}
+#logo h2 {
+   display: inline-block;
+overflow: hidden;
+font-size: 800;
+font-size: 1.9vw;
+color: #25d366;
+align-items: center;
+justify-content: center;
+margin-left: 0.4vw;
+
+}
+h2 span {
+display: inline-block;
+overflow: hidden;
+
+ }
+
+#others a{
+  
+   text-decoration: none;
+   font-size: 1.2vw;
+   color: rgb(39, 37, 37);
+  
+}
+#buttons{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   
+}
+
+#buttons a {
+   color: black;
+   border: 2px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   
+}
+
+.button {
+   height: 3.5vw;
+   width: 10vw;
+   border: 2px solid black;
+   display: inline-block;
+  
+   background-color: #25D366;
+   color: #fff;
+   text-decoration: none; /* Remove underline */
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+   
+ }
+
+ /* Hover effect */
+ .button:hover {
+   background-color: #0056b3;
+ }
+
+ 
+#google_translate_element{
+   width:150px;
+   height:20px;
+  
+
+   
+   
+   }
+
+ 
 #page1{
    height: calc(100vh + 14vh);
    width: 100%;
@@ -135,13 +239,43 @@ html, body{
 
 
 #page3{
-   height:calc(100vh + 14vh);
-   width: 100vw;
-    display: flex;
-   align-items: center;
-   justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+  padding-right: 11vw;
+   height: 100vh;
+   width:100%;
+   background-color:  #FCF5EB;
+
+   position: relative;
+ 
    
 }
+
+.left-page3{
+   height:60vh;
+   width:55%;
+   background-color: #FCF5EB;
+  
+   padding-left: 11vw;
+   padding-right: 8vw;
+   padding-bottom: 20vw;
+   font-size: 1.5vw;
+
+}
+.left-page3 h1{
+   font-size: 4vw;
+   
+}
+.left-page3 p{
+   padding-top: 1vw;
+   padding-bottom: 2vw;
+   
+}
+
+
+
 @media screen and (max-width: 568px) {
 #page3{
    display: flex;
@@ -212,6 +346,15 @@ html, body{
    width: 100%;
    background-color: #FCF5EB;
 }
+
+
+#page6{
+   height: calc(100vh + 14vh);
+   width: 100%;
+   background-color: #FCF5EB;
+}
+
+
 
 
 
