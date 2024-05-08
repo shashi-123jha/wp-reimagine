@@ -80,6 +80,25 @@ h2.innerHTML = clutter
     duration:0.7,
     delay:0.5,
     stagger:0.15,
+    repeat: -1, // Infinite repeat
+    repeatDelay: 1, // Delay between repeats (in seconds)
+    yoyo: true
 
    
+  });
+
+
+  // nav bar
+  gsap.to("#nav-bar", {
+    backgroundColor: "#fcf5ebc9",
+    duration: 0.5,
+    height: "10vh",
+    scrollTrigger: {
+      trigger: "#nav-bar",
+      scroller: "body",
+      // markers:true,
+      start: "top -10%",
+      end: "top -11%",
+      scrub: 1,
+    },
   });

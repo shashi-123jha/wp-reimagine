@@ -78,6 +78,7 @@ html, body{
    gap: 4vw;
    padding-left: 5vw;
    
+   
 
 }
 
@@ -303,30 +304,104 @@ overflow: hidden;
    height: calc(100vh + 14vh);
    width: 100%;
    background-color: #111B21;
-   display: flex;
+  
    align-items: center;
    justify-content: space-around;
    
 }
 
+#page4-main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 10vh;
+   padding-bottom: 10vh;
+}
+
+#scroller{
+      
+   white-space: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+   position: relative;
+   z-index: 10;
+
+
+}
+
+#scroller::-webkit-scrollbar{
+   display: none;
+}
+
+
+#scroller-in{
+   display: inline-block;
+   white-space: nowrap;
+
+}
+
+#scroller-in{
+   display: inline-block;
+   white-space: nowrap;
+   animation-name: scroll;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   /* to make it continuous */
+   animation-iteration-count: infinite;
+
+
+   
+}
+
+#scroller h4 {
+   display: inline-block;
+   font-size: 90px;
+   font-weight:800;
+margin-right: 10px;
+-webkit-text-stroke: 1px #fcf5eb7e ;
+color: transparent;
+transition: all linear 0.5s;
+
+}
+
+#scroller h4:hover {
+   color: #86AF1C;
+
+}
+
+
+@keyframes scroll {
+from {
+   transform: translateX(0);
+ }
+ to {
+   transform: translateX(-100%);
+ }
+}
+
+
 .left-page4{
-   height: 100vh;
-   width: 60%;
+   height: 60vh;
+   width: 40vw;
   margin-left: 6%;
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-right: 10vw;
    
    
 }
 #txt{
-   height: 100%;
+   height: 60vh;
    width: 90%;
    
 
 }
 #txt h1 {
-   font-size: 3.7rem;
+   font-size: 4vw;
+}
+#txt p {
+   font-size: 1.4vw;
 }
 #green{
    color: #25D366;
@@ -335,11 +410,76 @@ overflow: hidden;
 
 .right-page4{
    height: 50vh;
-   width: 40%;
+   width: 60vw;
    color: wheat;
    
    margin-right: 10%;  
 }
+
+
+
+#scroller-last{
+      
+   white-space: nowrap;
+   overflow-x: auto;
+   overflow-y: hidden;
+   position: relative;
+   z-index: 10;
+
+
+}
+
+#scroller-last::-webkit-scrollbar{
+   display: none;
+}
+
+
+#scroller-in-last{
+   display: inline-block;
+   white-space: nowrap;
+
+}
+
+#scroller-in-last{
+   display: inline-block;
+   white-space: nowrap;
+   animation-name: scroll-last;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   /* to make it continuous */
+   animation-iteration-count: infinite;
+
+
+   
+}
+
+#scroller-last h4 {
+   display: inline-block;
+   font-size: 90px;
+   font-weight:800;
+margin-right: 10px;
+-webkit-text-stroke: 1px #fcf5eb7e ;
+color: transparent;
+transition: all linear 0.5s;
+
+}
+
+#scroller-last h4:hover {
+   color: #86AF1C;
+
+}
+
+
+@keyframes scroll-last {
+to {
+   transform: translateX(0);
+ }
+ from {
+   transform: translateX(-100%);
+ }
+}
+
+
 
 #page5{
    height: calc(100vh + 14vh);
