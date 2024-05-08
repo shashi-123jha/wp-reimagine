@@ -411,7 +411,7 @@ from {
 .right-page4{
    height: 50vh;
    width: 60vw;
-   color: wheat;
+   color: rgba(245, 222, 179, 0.892);
    
    margin-right: 10%;  
 }
@@ -490,7 +490,8 @@ to {
 
 #page6{
    height: calc(100vh + 14vh);
-   width: 100%;
+   
+   width: 100vh;
    background-color: #FCF5EB;
 }
 
