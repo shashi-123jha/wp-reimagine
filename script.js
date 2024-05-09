@@ -102,3 +102,37 @@ h2.innerHTML = clutter
       scrub: 1,
     },
   });
+
+  // hamburger making 
+  var menu = document.querySelector("#hamburger i")
+  var cross = document.querySelector("#full i")
+
+var tl = gsap.timeline()
+
+tl.to("#full",{
+  left:"0",
+  duration:0.7,
+
+})
+
+tl.from("#full h4",{
+  y:140,
+  duration:0.7,
+  stagger:0.2,
+  opacity:0,
+})
+
+tl.from("#full i", {
+  opacity:0,
+  
+})
+tl.pause()
+
+menu.addEventListener("click", function(){
+tl.play()
+})
+
+cross.addEventListener("click", function(){
+  tl.reverse()
+  })
+  

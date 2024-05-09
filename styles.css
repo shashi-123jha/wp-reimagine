@@ -70,6 +70,18 @@ html, body{
    padding-right: 2vw;
 }
 
+#hamburger{
+   font-size: 2vw;
+   font-weight: 600;
+   align-items: center;
+   justify-content: center;
+
+   
+
+}
+#hamburger i {
+   cursor: pointer;
+}
 
 #others{
    display: flex;
@@ -168,12 +180,54 @@ overflow: hidden;
    
    }
 
+
+   #full{
+      height: 100vh;
+      width: 35vw;
+      background-color: #fcf5eb79;
+      position: absolute;
+      z-index: 3;
+      display: flex;
+    left: -40vw;
+    top: 0;
+      flex-direction: column;
+     
+      backdrop-filter: blur(10px);
+      padding-top: 10vh;
+      padding-left: 5vh;
+      padding-right: 8vw;
+   }
+   #full h4{
+
+      margin-bottom: 3vw;
+     
+
+   }
+   #full h4 a {
+      text-decoration: none;
+      font-size: 2.8vw;
+      color: black;
+    
+   }
+   #full i {
+      position: absolute;
+      top: 5%;
+      right: 10%;
+      background-color: whitesmoke;
+      border-radius: 50px;
+      padding: 0.7vw;
+      font-weight: 400;
+      font-size: 2vw;
+      cursor: pointer;
+   }
+
  
 #page1{
    height: calc(100vh + 14vh);
    width: 100%;
   
    background-color: #FCF5EB;
+   z-index: 2;
 
 }
 
