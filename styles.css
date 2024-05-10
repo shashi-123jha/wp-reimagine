@@ -314,7 +314,7 @@ overflow: hidden;
    justify-content: center;
    flex-direction: column;
    height: auto;
-   
+
     
    
 }
@@ -361,12 +361,14 @@ align-items: center;
 }
 
 
+
+
 }
 
 
 
 #page4{
-   height: calc(100vh + 14vh);
+   height: auto;
    width: 100%;
    background-color: #111B21;
   
@@ -379,8 +381,11 @@ align-items: center;
    display: flex;
    align-items: center;
    justify-content: center;
-   padding-top: 10vh;
-   padding-bottom: 10vh;
+  height: auto;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+ 
+  
 }
 
 #scroller{
@@ -390,6 +395,7 @@ align-items: center;
    overflow-y: hidden;
    position: relative;
    z-index: 10;
+   padding: 1vw;
 
 
 }
@@ -446,8 +452,8 @@ from {
 
 
 .left-page4{
-   height: 60vh;
-   width: 40vw;
+   height: 70vh;
+   width: 60vw;
   margin-left: 6%;
    display: flex;
    align-items: center;
@@ -457,8 +463,8 @@ from {
    
 }
 #txt{
-   height: 60vh;
-   width: 90%;
+   height: 70vh;
+   width: 40vw;
    
 
 }
@@ -466,7 +472,7 @@ from {
    font-size: 4vw;
 }
 #txt p {
-   font-size: 1.4vw;
+   font-size: 1.5vw;
 }
 #green{
    color: #25D366;
@@ -475,12 +481,87 @@ from {
 
 .right-page4{
    height: 50vh;
-   width: 60vw;
+   width: 50vw;
    color: rgba(245, 222, 179, 0.892);
    
    margin-right: 10%;  
 }
 
+@media screen and (max-width: 568px) {
+   #page4{
+      height: 96vh;
+      width: 100vw;
+     
+
+   }
+
+   #page4-main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column-reverse;
+   
+      
+
+     }
+
+   
+   #scroller h4 {
+      display: inline-block;
+      font-size: 13vw;
+      font-weight:600;
+     padding: auto;
+   
+   }
+
+   .left-page4{
+      height: 38vh;
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
+      padding-top: 3vh;
+ 
+   }
+   .left-page4 img {
+      height: 38vh;
+      width: 70vw;
+      padding-top: 3vh;
+   }
+   #txt{
+      height: 28vh;
+      width: 90vw;
+      padding-left: 25vw;
+
+
+      
+   
+   }
+   #txt h1 {
+      font-size: 8vw;
+   }
+   #txt p {
+      font-size: 3vw;
+   }
+   #green{
+      color: #25D366;
+   }
+   
+   
+   .right-page4{
+      height: 28vh;
+      width: 100vw;
+      color: rgba(245, 222, 179, 0.892);
+
+      
+      
+      
+   }
+
+
+   
+
+   
+}
 
 
 #scroller-last{
@@ -490,6 +571,8 @@ from {
    overflow-y: hidden;
    position: relative;
    z-index: 10;
+   padding: 1vw;
+
 
 
 }
@@ -542,6 +625,20 @@ to {
  from {
    transform: translateX(-100%);
  }
+}
+
+@media screen and (max-width: 568px) {
+
+  
+   
+   #scroller-last h4 {
+      display: inline-block;
+      font-size: 13vw;
+      font-weight:600;
+
+   
+   }
+  
 }
 
 
