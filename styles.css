@@ -915,12 +915,12 @@ to {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-left: 2vw;
-      padding-right: 2vw;
+      padding-left: 4vw;
+      padding-right: 4vw;
    }
    
    #hamburger{
-      font-size: 5vw;
+      font-size: 6vw;
       font-weight: 700;
       display: block;
    
@@ -949,17 +949,17 @@ to {
    }
    
   #logo img {
-   font-size: 5vw;
-font-size: 400;
-height: 2vh;
-width: 2vh;
+   font-size: 10vw;
+font-weight: 400;
+height: 4vh;
+width: 4vh;
 
 }
    #logo h2 {
       display: inline-block;
    overflow: hidden;
    font-weight: 600;
-   font-size: 3vw;
+   font-size: 4vw;
   
    
    }
@@ -980,7 +980,7 @@ width: 2vh;
    
    #buttons a {
     padding: 2vw;
-    font-size: 2vw;
+    font-size: 3vw;
   
    }
   
