@@ -313,6 +313,8 @@ overflow: hidden;
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   height: auto;
+   
     
    
 }
@@ -324,6 +326,7 @@ overflow: hidden;
    padding-left: 15vw;
    padding-right: 15vw;
    align-items: flex-start;
+   padding-bottom: 27vh;
  
  
 
@@ -336,7 +339,7 @@ overflow: hidden;
 .left-page3 p{
    
    
-   font-size: 3vw;
+   font-size: 3.2vw;
    
 }
 
@@ -344,7 +347,11 @@ overflow: hidden;
 align-items: center;
  height: 70vh;
  width: 100vw;
- padding: 3vw;
+ padding-left: 10vw;
+ padding-top: 2vh;
+ padding-bottom: 3vwh;
+  overflow: hidden;
+
 
 
 }
