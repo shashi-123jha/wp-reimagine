@@ -509,7 +509,7 @@ from {
    #scroller h4 {
       display: inline-block;
       font-size: 13vw;
-      font-weight:600;
+      font-weight:500;
      padding: auto;
    
    }
@@ -634,7 +634,8 @@ to {
    #scroller-last h4 {
       display: inline-block;
       font-size: 13vw;
-      font-weight:600;
+      font-weight:500;
+      padding: auto;
 
    
    }
