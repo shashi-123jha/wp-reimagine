@@ -135,4 +135,6 @@ tl.play()
 cross.addEventListener("click", function(){
   tl.reverse()
   })
+
+  
   

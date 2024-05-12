@@ -207,6 +207,194 @@ overflow: hidden;
   
    
 }
+
+@media (max-width: 600px) {
+
+   #cursor{
+      display: none;
+   
+   }
+
+   #nav-bar{
+      height: 12vh;
+      width: 100%;
+      background-color: #FCF5EB;
+      position: fixed;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 4vw;
+      padding-right: 4vw;
+   }
+   
+   #hamburger{
+      font-size: 6vw;
+      font-weight: 700;
+      display: block;
+   
+      
+   
+   }
+   
+   
+   
+   #hamburger i {
+      cursor: pointer;
+   }
+   
+   #others{
+      display: none;
+      
+      
+   
+   }
+   
+   #logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+   }
+   
+  #logo img {
+   font-size: 10vw;
+font-weight: 400;
+height: 4vh;
+width: 4vh;
+
+}
+   #logo h2 {
+      display: inline-block;
+   overflow: hidden;
+   font-weight: 600;
+   font-size: 4vw;
+  
+   
+   }
+   h2 span {
+   display: inline-block;
+   overflow: hidden;
+   
+    }
+   
+  
+   #buttons{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    
+      
+   }
+   
+   #buttons a {
+    padding: 2vw;
+    font-size: 3vw;
+  
+   }
+  
+   
+   .button {
+      height: auto;
+      width: auto;
+      border: 2px solid black;
+      display: inline-block;
+     
+      background-color: #25D366;
+      color: #fff;
+      text-decoration: none; /* Remove underline */
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      
+    }
+   
+    /* Hover effect */
+    .button:hover {
+      background-color: #3de74e;
+    }
+
+
+    #full{
+      height: 100vh;
+      width: 100vw;
+      background-color: #fcf5eb79;
+      position: absolute;
+      z-index: 3;
+      display: flex;
+    left: -110vw;
+    top: 0;
+      flex-direction: column;
+      overflow: hidden;
+     
+      backdrop-filter: blur(10px);
+      padding-top: 10vh;
+      padding-left: 5vh;
+      padding-right: 8vw;
+   }
+
+
+   #page1{
+     height: fit-content;
+      width: 100%;
+     
+      background-color: #FCF5EB;
+      z-index: 2;
+   
+   }
+   
+   .carousel-inner {
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      border: 1.2px solid black;
+    
+      
+   
+   }
+   #carouselExampleIndicators{
+      margin-top:12vh;
+      margin-left: 3vw;
+      margin-right: 3vw;
+     
+      
+   }
+
+   #full h4{
+
+      margin-bottom: 3vw;
+      border: 2px solid green;
+      padding: 1vw;
+
+   }
+   #full h4 a {
+      text-decoration: none;
+      font-size: 7vw;
+      color: black;
+      
+    
+   }
+   #full i {
+      position: absolute;
+      top: 5%;
+      right: 10%;
+     
+      padding: 0.7vw;
+      font-weight: 800;
+      font-size: 6vw;
+      cursor: pointer;
+   }
+
+
+
+
+   
+
+}
+
+
 #second {
    color: black;
    padding-right: 8vw;
@@ -745,7 +933,7 @@ to {
    grid-template-rows: 50% 50%;
 } */
 
-.wp {
+.wp-page5 {
    position: relative;
    width: 25rem;
 }
@@ -892,195 +1080,90 @@ to {
 
 
 #page7{
-   height: calc(100vh + 14vh);
+   height: fit-content;
    width: 100%;
    background-color: #FCF5EB;
 }
 
 
+#container{
 
-@media (max-width: 600px) {
-
-   #cursor{
-      display: none;
-   
+   height: 100vh;
+ }
+ .project-section-container{
+     width:100%;
+     height: 100%;
+     position: relative;
+    
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+   padding-right: 5vw;
+   padding-left: 5vw;
    }
-
-   #nav-bar{
-      height: 12vh;
-      width: 100%;
-      background-color: #FCF5EB;
-      position: fixed;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 4vw;
-      padding-right: 4vw;
-   }
-   
-   #hamburger{
-      font-size: 6vw;
-      font-weight: 700;
-      display: block;
-   
-      
-   
-   }
-   
-   
-   
-   #hamburger i {
-      cursor: pointer;
-   }
-   
-   #others{
-      display: none;
-      
-      
-   
-   }
-   
-   #logo{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+   .project-sec-box{
+     height: 90vh;
+     width: 430px;
+     position: relative;
     
    }
-   
-  #logo img {
-   font-size: 10vw;
-font-weight: 400;
-height: 4vh;
-width: 4vh;
-
-}
-   #logo h2 {
-      display: inline-block;
-   overflow: hidden;
-   font-weight: 600;
-   font-size: 4vw;
-  
-   
-   }
-   h2 span {
-   display: inline-block;
-   overflow: hidden;
-   
-    }
-   
-  
-   #buttons{
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+   .wp{
     
-      
-   }
-   
-   #buttons a {
-    padding: 2vw;
-    font-size: 3vw;
-  
-   }
-  
-   
-   .button {
-      height: auto;
-      width: auto;
-      border: 2px solid black;
-      display: inline-block;
+     position: absolute;
+    height:90vh;
+    width: 24vw;
+     transform-style: preserve-3d;
+     transition: all 1s ease;
+     /* justify-content: space-around; */
      
-      background-color: #25D366;
-      color: #fff;
-      text-decoration: none; /* Remove underline */
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-      
-    }
-   
-    /* Hover effect */
-    .button:hover {
-      background-color: #3de74e;
-    }
-
-
-    #full{
+   }
+ 
+   .wp-front img {
+     height: 80vh;
+     width: 21vw;
+     border-radius: 45px;
+   }
+   .project-sec-box:hover .wp{
+     transform: rotateY(180deg);
+   }
+   .wp-front{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     backface-visibility: hidden;
+     
+   }
+   .wp-back{
+     position: absolute;
+     height: 80vh;
+     width: 21vw;
+     backface-visibility: hidden;
+     transform: rotateY(180deg);
+     border-radius: 45px;
+     color: white;
+     box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 0.25), 0 2px 50px 2px rgba(0, 0, 0, 0.25), 0 0 100px 3px rgba(0, 0, 0, .25);
+     background-color: black;
+     text-align: center;
+     letter-spacing: 2px;
+     
+     padding: 25px;  
+   }
+   .btn-know-more{
+     height: 40px;
+     width: 200px;
+     font-size: 1.2rem;
+     margin: 20px;
+     padding: 5px;
+     border-radius: 10px;
+     transition: 0.5s;
+   }
+   .btn-know-more:hover{
+     background-color: rgb(255, 255, 255);
+     transform: scale(1.05);
+     cursor: pointer;
+     font-weight: 600;
+   }
+   #page8{
       height: 100vh;
-      width: 100vw;
-      background-color: #fcf5eb79;
-      position: absolute;
-      z-index: 3;
-      display: flex;
-    left: -110vw;
-    top: 0;
-      flex-direction: column;
-      overflow: hidden;
-     
-      backdrop-filter: blur(10px);
-      padding-top: 10vh;
-      padding-left: 5vh;
-      padding-right: 8vw;
-   }
-
-
-   #page1{
-     height: fit-content;
       width: 100%;
-     
-      background-color: #FCF5EB;
-      z-index: 2;
-   
    }
-   
-   .carousel-inner {
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      border: 1.2px solid black;
-    
-      
-   
-   }
-   #carouselExampleIndicators{
-      margin-top:12vh;
-      margin-left: 3vw;
-      margin-right: 3vw;
-     
-      
-   }
-
-   #full h4{
-
-      margin-bottom: 3vw;
-      border: 2px solid green;
-      padding: 1vw;
-
-   }
-   #full h4 a {
-      text-decoration: none;
-      font-size: 7vw;
-      color: black;
-      
-    
-   }
-   #full i {
-      position: absolute;
-      top: 5%;
-      right: 10%;
-     
-      padding: 0.7vw;
-      font-weight: 800;
-      font-size: 6vw;
-      cursor: pointer;
-   }
-
-
-
-
-   
-
-}
