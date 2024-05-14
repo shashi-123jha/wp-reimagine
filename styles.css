@@ -7,14 +7,32 @@
 html, body{
     height: 100%;
     width: 100%;
-
 }
-#main{
-  position: relative;
-  overflow: hidden;
-  background-color: #FCF5EB;
 
 
+
+#loader{
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   background-color: #111B21;
+   z-index: 999;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   gap: 3vw;
+   overflow: hidden;
+}
+#loader h1 {
+   font-size: 3vw;
+   font-weight: 700;
+   color: #49D87C;
+}
+
+#main1{
+   position: relative;
+   overflow: hidden;
 }
 
 #cursor{
@@ -23,11 +41,10 @@ html, body{
    background-color: #25d366;
    border-radius: 50%;
    position: fixed;
-   z-index: 1000;
+   z-index: 10;
    transition: all linear 0.08s ease-in-out;
    align-items: center;
-   padding:5px
-   ;
+   padding:5px;
    margin: auto;
 
 }
@@ -60,9 +77,9 @@ html, body{
 #nav-bar{
    height: 12vh;
    width: 100%;
-   background-color: #FCF5EB;
+   z-index: 99;
    position: fixed;
-   z-index: 1;
+
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -180,33 +197,45 @@ overflow: hidden;
    background-color: #0056b3;
  }
 
+ #page1{
+   height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+   padding-top: 40vh;
+        text-align: center;
+        background-color: #fdf7ef22;
+ }
 
+ #page1 h1 {
+   font-size: 13vw;
+   font-weight: 900;
+   position: relative;
+   color: #4BAF70;
+   display: inline-block;
+
+}
+#page1 h1::before{
+   content: "Whatsapp.";
+   position: absolute;
+   color: black;
+   top: -6px;
+   left: -6px;
+   -webkit-text-stroke: 2px #86AF1C;
+   z-index: -1;
+}
  
-#page1{
-   height: calc(100vh + 14vh);
+ video {
+   height: 100vh;
    width: 100%;
+   object-fit: cover;
+   z-index: -1;
+   position: fixed;
 
-   background-color: #FCF5EB;
-   z-index: 2;
-
-}
-
-.carousel-inner {
-   border-radius: 15px;
-   display: flex;
-   align-items: center;
-   border: 1.2px solid black;
- 
-   
-
-}
-#carouselExampleIndicators{
-  
-   margin-left: 3vw;
-   margin-right: 3vw;
-  
-   
-}
+ }
 
 @media (max-width: 600px) {
 
@@ -216,7 +245,7 @@ overflow: hidden;
    }
 
    #nav-bar{
-      height: 12vh;
+      height: 10vh;
       width: 100%;
       background-color: #FCF5EB;
       position: fixed;
@@ -328,39 +357,15 @@ width: 4vh;
     top: 0;
       flex-direction: column;
       overflow: hidden;
-     
+     display: block;
       backdrop-filter: blur(10px);
       padding-top: 10vh;
       padding-left: 5vh;
       padding-right: 8vw;
    }
 
+   
 
-   #page1{
-     height: fit-content;
-      width: 100%;
-     
-      background-color: #FCF5EB;
-      z-index: 2;
-   
-   }
-   
-   .carousel-inner {
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      border: 1.2px solid black;
-    
-      
-   
-   }
-   #carouselExampleIndicators{
-      margin-top:12vh;
-      margin-left: 3vw;
-      margin-right: 3vw;
-     
-      
-   }
 
    #full h4{
 
@@ -395,48 +400,75 @@ width: 4vh;
 }
 
 
-#second {
-   color: black;
-   padding-right: 8vw;
-   padding-top: 10vh;
-   background-color:#FCF5EB ;
-   width: 100vw;
+
+
+#full{
+   display: none;
    height: 100vh;
+   width: 100vw;
+   background-color: #fcf5eb79;
+   position: absolute;
+  
+   display: flex;
+ left: -110vw;
+ top: 0;
+   flex-direction: column;
+   overflow: hidden;
+  
+   backdrop-filter: blur(10px);
+   padding-top: 10vh;
+   padding-left: 5vh;
+   padding-right: 8vw;
 }
 
-.elem {
-   height: 17vh;
-   position: relative;
+#page24{
+   height:auto;
+   width: 100vw;
+    z-index: 9;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
+   flex-direction: column;
+   background-color: #111B22;
+   
+}
+#upper{
+   height: 45vh;
    width: 100%;
-   padding: 1.5vw 3vw;
-   padding-right: 0;
-   border-top: 1px solid #888;
-}
+  
 
-.elem h1 {
-   text-transform: uppercase;
-   font-size: 4.6vw;
-   opacity: 0.8;
 }
-
-.elemlast {
-   border-bottom: 1px solid #888;
-}
-
-.elem img {
-   opacity: 0;
-   pointer-events: none;
-   height: 140%;
+#page24 video {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
    z-index: 999;
-   position: absolute;
-   transform: translate(-50%, -50%);
+ 
+  
+ }
+
+ #middle {
+   height: 40vh;
+   width: 100%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 5vw;
+ }
+
+ #middle h2 {
+   font-size: 3vw;
+   color: white;
+
+ }
+
+ #lower{
+   height: 45vh;
+   width: 100%;
+ 
+
 }
-
-
-
 
 
 
@@ -447,9 +479,9 @@ width: 4vh;
  justify-content: space-between  ;
    height: 100vh;
    width:100%;
-   background-color:  #FCF5EB;
-    position: relative;
- 
+   z-index: 10;
+   
+    background-color: #FDF7EF;
    
 }
 
@@ -457,7 +489,7 @@ width: 4vh;
    top: 10vh;
    height:100vh;
    width:45vw;
-   background-color: #FCF5EB;
+   
    padding-left: 15vw;
    padding-right: 2vw;
    padding-top: 13vh;
@@ -477,14 +509,17 @@ width: 4vh;
 }
 
 #video-call-img{
- top: 0;
+ 
  height: 100vh;
  width: 55vw;
  padding-left: 15vw;
+ padding-right: 15vw;
+ align-items: center;
+ justify-content: center;
 
 }
 #video-call-img img{
-   height: 96vh;
+   height: 85vh;
    width: 23vw;
 }
 
@@ -558,11 +593,11 @@ align-items: center;
 #page4{
    height: auto;
    width: 100%;
-   background-color: #111B21;
-  
+   background-color: #111b21f6;
+   position: relative;
    align-items: center;
    justify-content: space-around;
-   
+   z-index: 10;
 }
 
 #page4-main{
@@ -835,7 +870,9 @@ to {
 #page5{
    height: calc(100vh + 14vh);
    width: 100%;
-   background-color: #FCF5EB;
+   z-index: 10;
+    position: relative;
+    background-color: #FDF7EF;
 }
 
 
@@ -952,14 +989,15 @@ to {
 #page6{
    height: calc(100vh + 14vh);
    width: 100%;
-   background-color: #FCF5EB;
-
+   z-index: 10;
+   position: relative;
+   background-color: #FDF7EF;
 }
 
 .container-page6{
    height: 100vh;
    width: 100vw;
-   background-color: #FCF5EB;
+   
    display: flex;
    position: relative;
 }
@@ -967,7 +1005,7 @@ to {
 .photo-page6{
    height: 100vh;
    width:50vw;
-   background-color: #FCF5EB;
+
    display: flex;
    justify-content: center;
    align-items: center;
@@ -976,7 +1014,7 @@ to {
 .content-page6{
    height: 100vh;
    width:50vw;
-   background-color:#FCF5EB;
+  
    display: flex;
    justify-content: center;
    align-items: center;
@@ -1079,7 +1117,9 @@ to {
 #page7{
    height: fit-content;
    width: 100%;
-   background-color: #FCF5EB;
+   background-color: #111b21be;
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -1163,4 +1203,6 @@ to {
    #page8{
       height: 100vh;
       width: 100%;
+      z-index: 10;
+      background-color: #FDF7EF;
    }

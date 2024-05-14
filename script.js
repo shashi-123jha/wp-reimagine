@@ -1,9 +1,10 @@
-// locomotive.js code 
+/* locomotive.js code 
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     lerp:0.3,
 });
+*/
 
 var crsr = document.querySelector("#cursor")
 var crsrb = document.querySelector("#cursor-blur")
@@ -57,7 +58,7 @@ document.querySelectorAll(".elem").forEach(function (elem) {
 // logo animation 
 
 function breakTheText() {
-    var h2 = document.querySelector("#h11")
+    var h2 = document.querySelector("#h11 ")
 var h2Text  = h2.textContent
 
 var splitedtext = h2Text.split("")
@@ -137,4 +138,51 @@ cross.addEventListener("click", function(){
   })
 
   
-  
+
+
+  var w1 = gsap.timeline()
+
+  w1.from("#loader h1 , #loader img" , {
+    x:90,
+    opacity:0,
+    duration:2,
+    stagger:0.3,
+      
+  })
+
+  w1.to("#loader",{
+    opacity:0,
+
+  })
+
+  w1.to("#loader",{
+    display:"none"
+  })
+ 
+
+
+  w1.from(" #stagger",{
+    y:30,
+    opacity:0,
+    duration:1,
+    stagger:0.1
+    
+  })
+
+ 
+
+
+
+gsap.from("#video-call-img img",{
+  y: 90,
+opacity: 0,
+duration: 3,
+scrollTrigger: {
+  trigger: "#page3",
+  scroller: "body",
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 2,
+},
+})
