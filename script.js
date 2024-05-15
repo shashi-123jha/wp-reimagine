@@ -95,7 +95,7 @@ h2.innerHTML = clutter
     duration: 0.5,
     height: "10vh",
     scrollTrigger: {
-      trigger: "#nav-bar",
+      trigger: "#page1",
       scroller: "body",
       // markers:true,
       start: "top -10%",
@@ -103,6 +103,7 @@ h2.innerHTML = clutter
       scrub: 1,
     },
   });
+
 
   // hamburger making 
   var menu = document.querySelector("#hamburger i")
@@ -169,12 +170,26 @@ cross.addEventListener("click", function(){
     
   })
 
- 
+  gsap.from("#page1 h1",{
+    y: 120,
+  opacity: 0,
+  delay:1,
+  duration: 3,
+  scrollTrigger: {
+    trigger: "main1",
+    scroller: "body",
+    // markers:true,
+    start: "top 75%",
+    end: "top 60%",
+    scrub: 2,
+  },
+  })
 
 
 
-gsap.from("#video-call-img img",{
-  y: 90,
+gsap.from("#video-call-img img , .left-page3 ",{
+  y: 120,
+  x:-10,
 opacity: 0,
 duration: 3,
 scrollTrigger: {
@@ -186,3 +201,110 @@ scrollTrigger: {
   scrub: 2,
 },
 })
+
+gsap.from("#upper , #middle   ",{
+  y: 120,
+opacity: 0,
+delay:0.3,
+duration: 3,
+scrollTrigger: {
+  trigger: "#page2",
+  scroller: "body",
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 2,
+},
+})
+
+gsap.from("#lower ",{
+  y: 30,
+opacity: 0,
+delay:0.3,
+duration: 3,
+scrollTrigger: {
+  trigger: "#lower ",
+  scroller: "body",
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 2,
+},
+})
+
+gsap.from(".left-page4 ,#txt , #scroller ,#scroller-last h4  ",{
+  y: 190,
+  x:-10,
+opacity: 0,
+duration: 3,
+scrollTrigger: {
+  trigger: "#page4",
+  scroller: "body",
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 3,
+},
+})
+
+
+gsap.from(" #left-page5 ,#right-page5  ",{
+  y: 140,
+
+opacity: 0,
+duration: 3,
+scrollTrigger: {
+  trigger: "#page5",
+  scroller: "body",
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 2,
+},
+})
+
+gsap.from(" .container-page6 ",{
+  y: 190,
+
+opacity: 0,
+duration:3 ,
+scrollTrigger: {
+  trigger: "#page6",
+  scroller: "body",
+  stagger:1,
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 4,
+},
+})
+
+gsap.from("  .project-section-container",{
+  y: 190,
+
+opacity: 0,
+duration:3 ,
+scrollTrigger: {
+  trigger: "#page7",
+  scroller: "body",
+  stagger:0.1,
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 4,
+},
+})
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
