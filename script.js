@@ -91,7 +91,7 @@ h2.innerHTML = clutter
 
   // nav bar
   gsap.to("#nav-bar", {
-    backgroundColor: "#fcf5ebc9",
+    
     duration: 0.5,
     height: "10vh",
     scrollTrigger: {
@@ -153,11 +153,12 @@ cross.addEventListener("click", function(){
 
   w1.to("#loader",{
     opacity:0,
-
+   
   })
 
   w1.to("#loader",{
-    display:"none"
+    display:"none",
+   
   })
  
 
@@ -171,13 +172,13 @@ cross.addEventListener("click", function(){
   })
 
   gsap.from("#page1 h1",{
-    y: 120,
+    y: 190,
   opacity: 0,
-  delay:1,
+  delay:3,
   duration: 3,
   scrollTrigger: {
-    trigger: "main1",
-    scroller: "body",
+    trigger: "#page1",
+    scroller: "#page1",
     // markers:true,
     start: "top 75%",
     end: "top 60%",
@@ -188,7 +189,7 @@ cross.addEventListener("click", function(){
 
 
 gsap.from("#video-call-img img , .left-page3 ",{
-  y: 120,
+  y: 190,
   x:-10,
 opacity: 0,
 duration: 3,
@@ -203,7 +204,7 @@ scrollTrigger: {
 })
 
 gsap.from("#upper , #middle   ",{
-  y: 120,
+  y: 190,
 opacity: 0,
 delay:0.3,
 duration: 3,
@@ -249,7 +250,7 @@ scrollTrigger: {
 
 
 gsap.from(" #left-page5 ,#right-page5  ",{
-  y: 140,
+  y: 190,
 
 opacity: 0,
 duration: 3,
