@@ -8,6 +8,9 @@ html, body{
     width: 100%;
 }
 
+*::-webkit-scrollbar {
+   display: none !important;
+ }
 
 
 #loader{
@@ -79,12 +82,13 @@ html, body{
    width: 100%;
    z-index: 99;
    position: fixed;
-background-color: #fcf5ebc9;
+background-color: #ff9f195a;
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding-left: 2vw;
    padding-right: 2vw;
+   backdrop-filter: blur(14px);
 }
 
 #hamburger{
