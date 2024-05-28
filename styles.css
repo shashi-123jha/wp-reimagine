@@ -2,6 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: Poppins;
 }
 html, body{
     height: 100%;
@@ -11,6 +12,7 @@ html, body{
 *::-webkit-scrollbar {
    display: none !important;
  }
+
 
 
 #loader{
