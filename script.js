@@ -1,25 +1,14 @@
-/* locomotive.js code 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    lerp:0.3,
-});
-*/
-
 var crsr = document.querySelector("#cursor")
-var crsrb = document.querySelector("#cursor-blur")
+
 
 document.addEventListener("mousemove" , function(dets){
 crsr.style.left = dets.x+30+"px",
 crsr.style.top = dets.y+"px"
 
 // for the blur parts 
-crsrb.style.left = dets.x - 250 +"px",
-crsrb.style.top = dets.y - 250 +"px"
+crsrb.style.left = dets.x - 250 +"px"
    
 })
-
-
 
 document.addEventListener("mousemove" , function(dets){
 
@@ -190,7 +179,7 @@ cross.addEventListener("click", function(){
 
 gsap.from("#video-call-img img , .left-page3 ",{
   y: 190,
-  x:-10,
+ 
 opacity: 0,
 duration: 3,
 scrollTrigger: {
@@ -203,7 +192,7 @@ scrollTrigger: {
 },
 })
 
-gsap.from("#upper , #middle   ",{
+gsap.from("#upper video , #middle h2  ",{
   y: 190,
 opacity: 0,
 delay:0.3,
@@ -218,7 +207,7 @@ scrollTrigger: {
 },
 })
 
-gsap.from("#lower ",{
+gsap.from("#lower video ",{
   y: 30,
 opacity: 0,
 delay:0.3,
@@ -235,7 +224,6 @@ scrollTrigger: {
 
 gsap.from(".left-page4 ,#txt , #scroller ,#scroller-last h4  ",{
   y: 190,
-  x:-10,
 opacity: 0,
 duration: 3,
 scrollTrigger: {
@@ -276,7 +264,7 @@ scrollTrigger: {
   // markers:true,
   start: "top 75%",
   end: "top 60%",
-  scrub: 4,
+  scrub: 2,
 },
 })
 
@@ -292,7 +280,7 @@ scrollTrigger: {
   // markers:true,
   start: "top 75%",
   end: "top 60%",
-  scrub: 4,
+  scrub: 1,
 },
 })
 
@@ -309,3 +297,20 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+gsap.from("#cards-container",{
+  y: 190,
+ 
+opacity: 0,
+duration: 3,
+scrollTrigger: {
+  trigger: "#page7",
+  scroller: "body",
+  // markers:true,
+  start: "top 75%",
+  end: "top 60%",
+  scrub: 2,
+},
+})

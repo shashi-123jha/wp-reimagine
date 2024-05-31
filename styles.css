@@ -9,6 +9,19 @@ html, body{
     width: 100%;
 }
 
+#cursor{
+   height: 20px;
+   width: 20px;
+   background-color: #103928;
+   border-radius: 50%;
+   position: fixed;
+   z-index: 99;
+   transition: all linear 0.08s;
+
+}
+
+
+
 *::-webkit-scrollbar {
    display: none !important;
  }
@@ -40,43 +53,7 @@ html, body{
    overflow: hidden;
 }
 
-#cursor{
-   height: 40px;
-   width: 40px;
-   background-color: #25d366;
-   border-radius: 50%;
-   position: fixed;
-   z-index: 999;
-   transition: all linear 0.08s ease-in-out;
-   align-items: center;
-   padding:5px;
-   margin: auto;
 
-}
-#cursor-blur{
-
-   height: 500px;
-   width: 500px;
-   background-color: #25d36561;
-   border-radius: 50%;
-   position: fixed;
-   filter: blur(80px);
-   z-index: -3;
-   transition: all linear 0.4s;
-}
-
-
-#cursor h5{
-   font: 80;
-   color: gray;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin: auto;
-   
-   
-   
-}
 
 
 #nav-bar{
@@ -207,7 +184,7 @@ overflow: hidden;
    height: 100vh;
         width: 100%;
         position: relative;
-        z-index: 9;
+        z-index: 8;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -255,7 +232,7 @@ overflow: hidden;
       width: 100%;
       background-color: #FCF5EB;
       position: fixed;
-      z-index: 1;
+      z-index: 99;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -263,7 +240,7 @@ overflow: hidden;
       padding-right: 4vw;
    }
    
-   #hamburger{
+   #hamburger  {
       font-size: 6vw;
       font-weight: 700;
       display: block;
@@ -355,9 +332,9 @@ width: 4vh;
     #full{
       height: 100vh;
       width: 100vw;
-      background-color: #fcf5eb79;
+      background-color: #f0fceb79;
       position: absolute;
-      z-index: 3;
+      z-index: 999;
       display: flex;
     left: -110vw;
     top: 0;
@@ -420,7 +397,7 @@ width: 4vh;
  top: 0;
    flex-direction: column;
    overflow: hidden;
-  
+  z-index: 999;
    backdrop-filter: blur(10px);
    padding-top: 10vh;
    padding-left: 5vh;
@@ -435,7 +412,7 @@ width: 4vh;
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   background-color: #111B22;
+    background-color: #111B22;
    
 }
 #upper{
@@ -539,9 +516,53 @@ padding: 5vw;
 
 @media screen and (max-width: 568px) {
 
-   #second{
-      height: auto;
+   #page2{
+      height:auto;
       width: 100vw;
+       z-index: 9;
+      display: flex;
+     flex-wrap: wrap;
+   
+      
+   }
+   #upper{
+      height: auto;
+      width: 100%;
+
+   }
+   #upper video {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      z-index: 999; 
+    }
+   
+   
+    #lower video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 999;
+    }  
+    #middle {
+      height: auto;
+      width: 100%;
+  align-items: center;
+   justify-content: center;
+   padding: 5vw;
+    }
+   
+    #middle h2 {
+      font-size: 3vw;
+      color: white;
+   
+    }
+   
+    #lower{
+      height: auto;
+      width: 100%;
+    
+   
    }
 #page3{
    display: flex;
@@ -1126,94 +1147,95 @@ to {
 
 
 #page7{
-   height: fit-content;
+   height: 100vh;
    width: 100%;
-   background-color: #111b21f5;
-    position: relative;
+   background-color: #FDF7EF;
+   
     z-index: 10;
+    align-items: center;
+    justify-content: center;
+    
+    
+  
+}
+
+#cards-container{
+  
+   height: 72vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 77px;
+   position: relative;
+   z-index: 10;
+   overflow: hidden;
+margin-top: 5vh;
+
+}
+
+.card{
+   height: 99%;
+   width: 21vw;
+overflow-y: hidden;
+   border-radius: 10px;
+   background-size: cover;
+   background-position: center;
+   transition: all ease 0.6s;
+
+
+}
+
+#card-1 {
+   background-image: url(./images/wp\ payment\ img.jpg);
+ }
+ #card-2 {
+   background-image: url(./images/wp\ ai\ img.jpg);
+ }
+ #card-3 {
+   background-image: url(./images/wp\ status\ img.jpg);
+ }
+
+ .overlay {
+   height: 100%;
+   width: 100%; 
+   background-color: #43CD66;
+   border-radius: 10px;
+   padding: 30px;
+   padding-top: 100px;
+   opacity: 0;
+   transition: all ease 0.5s;
+ 
+
+}
+.overlay h4 {
+   color: black;
+font-size: 40px;
+white-space: nowrap;
+margin-bottom: 20px;
+text-transform: uppercase;
+font-weight: 800;
+}
+
+.overlay p {
+   color: black;
+   font-size: 18px;
+}
+.card:hover .overlay{
+   opacity: 1;
+ 
+}
+
+.card:hover{
+   transform: rotate3d(-1,1,0,15deg);
+  
 }
 
 
-#container{
-
-   height: 100vh;
- }
- .project-section-container{
-     width:100%;
-     height: 100%;
-     position: relative;
-    
-     display: flex;
-    align-items: center;
-    justify-content: space-around;
-   padding-right: 5vw;
-   padding-left: 5vw;
-   }
-   .project-sec-box{
-     height: 90vh;
-     width: 430px;
-     position: relative;
-    
-   }
-   .wp{
-    
-     position: absolute;
-    height:90vh;
-    width: 24vw;
-     transform-style: preserve-3d;
-     transition: all 1s ease;
-     /* justify-content: space-around; */
-     
-   }
- 
-   .wp-front img {
-     height: 80vh;
-     width: 21vw;
-     border-radius: 45px;
-   }
-   .project-sec-box:hover .wp{
-     transform: rotateY(180deg);
-   }
-   .wp-front{
-     position: absolute;
-     height: 100%;
-     width: 100%;
-     backface-visibility: hidden;
-     
-   }
-   .wp-back{
-     position: absolute;
-     height: 80vh;
-     width: 21vw;
-     backface-visibility: hidden;
-     transform: rotateY(180deg);
-     border-radius: 45px;
-     color: white;
-     box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 0.25), 0 2px 50px 2px rgba(0, 0, 0, 0.25), 0 0 100px 3px rgba(0, 0, 0, .25);
-     background-color: black;
-     text-align: center;
-     letter-spacing: 2px;
-     
-     padding: 25px;  
-   }
-   .btn-know-more{
-     height: 40px;
-     width: 200px;
-     font-size: 1.2rem;
-     margin: 20px;
-     padding: 5px;
-     border-radius: 10px;
-     transition: 0.5s;
-   }
-   .btn-know-more:hover{
-     background-color: rgb(255, 255, 255);
-     transform: scale(1.05);
-     cursor: pointer;
-     font-weight: 600;
-   }
    #page8{
       height: 100vh;
       width: 100%;
       z-index: 10;
       background-color: #FDF7EF;
    }
+
+  
