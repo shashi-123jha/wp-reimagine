@@ -1327,3 +1327,31 @@ font-weight: 800;
        width: 100%;
    }
    }
+
+
+
+   /*Communitypg09*/
+   #imageapg09{
+      height: 80vh;
+      width: 20vw;
+      box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+      border:0.3vh solid black;
+      border-radius: 3vh;
+      
+      }
+      #screen01pg09{
+         background-color: #b0eeb8;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          
+      }
+      #heading01pg09{
+      font-size: 6vh;
+      color: rgb(37 211 102);
+      }
+      #main01pg09{
+      height: 10vhv;
+      width: 29vw;
+      font-size: larger;
+      }
