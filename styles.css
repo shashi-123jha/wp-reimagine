@@ -642,7 +642,7 @@ padding: 5vw;
 
 #scroller h4 {
    display: inline-block;
-   font-size: 90px;
+   font-size: 80px;
    font-weight:800;
 margin-right: 10px;
 -webkit-text-stroke: 1px #fcf5eb7e ;
@@ -703,9 +703,9 @@ from {
    margin-right: 10%;  
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 1000px) {
    #page4{
-      height: 96vh;
+      height: auto;
       width: 100vw;
      
 
@@ -716,22 +716,22 @@ from {
       align-items: center;
       justify-content: center;
       flex-direction: column-reverse;
-   
-      
+
+
 
      }
 
    
    #scroller h4 {
       display: inline-block;
-      font-size: 13vw;
+      font-size: 12vw;
       font-weight:500;
      padding: auto;
    
    }
 
    .left-page4{
-      height: 38vh;
+      height: 60vh;
       width: 100vw;
       align-items: center;
       justify-content: center;
@@ -739,12 +739,12 @@ from {
  
    }
    .left-page4 img {
-      height: 38vh;
+      height: 58vh;
       width: 70vw;
-      padding-top: 3vh;
+      padding-top: 2vh;
    }
    #txt{
-      height: 28vh;
+      height: 17vh;
       width: 90vw;
       padding-left: 25vw;
 
@@ -756,7 +756,7 @@ from {
       font-size: 8vw;
    }
    #txt p {
-      font-size: 3vw;
+      font-size:3vw;
    }
    #green{
       color: #25D366;
@@ -764,9 +764,10 @@ from {
    
    
    .right-page4{
-      height: 28vh;
+      height: 20vh;
       width: 100vw;
       color: rgba(245, 222, 179, 0.892);
+      margin-bottom: 3vh;
 
       
       
@@ -1373,7 +1374,7 @@ font-weight: 800;
       background-color: #ffffff;
    }
    
-   /responsive/
+   
    @media(max-width: 767px){
      .footer-col{
        width: 50%;
