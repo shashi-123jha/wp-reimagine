@@ -416,7 +416,7 @@ width: 4vh;
    
 }
 #upper{
-   height: 45vh;
+   height:35vh;
    width: 100%;
   
 
@@ -436,7 +436,7 @@ width: 4vh;
    z-index: 999;
  }  
  #middle {
-   height: 40vh;
+   height: 30vh;
    width: 100%;
 
 display: flex;
@@ -452,7 +452,7 @@ padding: 5vw;
  }
 
  #lower{
-   height: 45vh;
+   height: 35vh;
    width: 100%;
  
 
