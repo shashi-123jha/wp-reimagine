@@ -852,7 +852,7 @@ to {
 #page5{
    height: calc(100vh + 14vh);
    width: 100%;
-   z-index: 10;
+   z-index: 9;
     position: relative;
     background-color: #FDF7EF;
 }
