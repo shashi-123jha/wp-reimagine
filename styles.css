@@ -850,8 +850,9 @@ to {
 
 
 #page5{
-   height: calc(100vh + 14vh);
+   height: auto;
    width: 100%;
+   text-align: center;
    z-index: 9;
     position: relative;
     background-color: #FDF7EF;
@@ -867,13 +868,14 @@ to {
 
 #left-page5 {
    margin: 10%;
-   margin-top: 30%;
+   margin-top: 20%;
 }
 
 #left-page5 h1 {
    text-align: left;
    font-size: 5rem;
    line-height: 70px;
+   /* color: #24D366; */
    font-family: "Noto Sans", sans-serif;
    font-optical-sizing: auto;
    font-style: normal;
@@ -882,17 +884,31 @@ to {
 
 }
 #left-page5 h3{
-   margin-top: 50px;
-   text-align: left;
-   text-decoration: underline;
+   margin-top: 10px;
+   text-align:center;
+   /* text-decoration: underline; */
    font-size:2rem ;
    font-family: "Noto Sans", sans-serif;
 }
-#left-page5 h3:hover{
-   color: rgb(24, 160, 24);
+.learn{
+   width: 10vw;
+   height:auto;
+   margin-top: 50px;
+   box-sizing: border-box;
+   border: 5px solid black;
+   border-radius: 15px;
+   background-color: rgb(75, 200, 115);
+   
+
 }
+.learn:hover{
+   transform: scale(1.03);
+   transition-duration: 1.5;
+   cursor: pointer;
+}
+
 #left-page5 p {
-   margin-top: 25px;
+   margin-top: 40px;
    text-align: left;
    font-size: 2rem;
    font-family: "Noto Sans", sans-serif;
@@ -908,31 +924,53 @@ to {
 
 .image {
    position: relative;
-   margin: 10%;
+   padding-top: 15vh;
 }
-
+.wp-page5{
+   position: absolute;
+   height: 78vh;
+   width: 27vw;
+}
+.wp-page5:hover{
+   transform: scale(1.2);
+   transition-duration: 0.8s;
+   cursor: pointer;
+}
 .one {
    position: absolute;
-   bottom: 40vh;
-   left: 10vw;
+   bottom: 30vh;
+   left: 15vw;
+   
 }
-
+.one:hover{
+   transform: scale(1.8);
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
 .two {
    position: absolute;
-   bottom: 30vh;
-   left: 10vw;
+   bottom: 22vh;
+   left: 15vw;
 }
-
+.two:hover{
+   transform: scale(1.6);
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
 .three {
    position: absolute;
-   bottom: 20vh;
-   left: 10vw;
+   bottom: 13.5vh;
+   left: 15vw;
 }
-
+.three:hover{
+   transform: scale(1.5);
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
 .dancer {
    position: absolute;
-   bottom: 50vh;
-   left: 18vw;
+   bottom: 45vh;
+   left: 22vw;
 }
 
 .baby {
@@ -964,6 +1002,222 @@ to {
    grid-template-rows: 1fr 1fr 1fr;
 } */
 
+@media(max-width:1355px){
+   #page5{
+      height: auto;
+      width: 100%;
+      text-align: center;
+      z-index: 9;
+       position: relative;
+       background-color: #FDF7EF;
+   }
+   
+   
+   #container-page5 {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      grid-template-columns: 50% 50%;
+    
+   }
+   
+   #left-page5 {
+  
+      padding-bottom: 10vh;
+   }
+   
+   #left-page5 h1 {
+      text-align: left;
+      font-size: 4rem;
+      line-height: 70px;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:
+          "wdth" 100;
+   
+   }
+   #left-page5 h3{
+      margin-top: 10px;
+      text-align:center;
+      /* text-decoration: underline; */
+      font-size:1.6rem ;
+      font-family: "Noto Sans", sans-serif;
+   }
+   .learn{
+      width: 10vw;
+      height:auto;
+      margin-top: 50px;
+      box-sizing: border-box;
+      border: 5px solid black;
+      border-radius: 15px;
+      background-color: rgb(75, 200, 115);
+      
+   
+   }
+   .learn:hover{
+      transform: scale(1.03);
+      transition-duration: 1.5;
+      cursor: pointer;
+   }
+   
+   #left-page5 p {
+      margin-top: 40px;
+      text-align: left;
+      font-size: 1rem;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-variation-settings:
+          "wdth" 100;
+   }
+   
+   /* #right {
+     
+   } */
+   
+   .image {
+      position: relative;
+      padding-top: 15vh;
+   }
+   .wp-page5{
+      position: absolute;
+      height: 78vh;
+      width: 24vw;
+   }
+   .wp-page5:hover{
+      transform: scale(1.2);
+      transition-duration: 1s;
+      cursor: pointer;
+   }
+   .one {
+      position: absolute;
+      bottom: 30vh;
+      left: 10vw;
+      margin-bottom: 2vh;
+      
+   }
+   .one:hover{
+      transform: scale(1.8);
+      transition-duration: 0.8s;
+      cursor: pointer;
+   }
+   .two {
+      position: absolute;
+      bottom: 22vh;
+      left: 10vw;
+      margin-bottom: 2vh;
+   }
+   .two:hover{
+      transform: scale(1.6);
+      transition-duration: 0.8s;
+      cursor: pointer;
+   }
+   .three {
+      position: absolute;
+      bottom: 13.5vh;
+      left: 10vw;
+   }
+   .three:hover{
+      transform: scale(1.5);
+      transition-duration: 0.8s;
+      cursor: pointer;
+   }
+   .dancer {
+      position: absolute;
+      bottom: 45vh;
+      left: 22vw;
+   }
+   
+   .baby {
+      height: 50%;
+      width: 50%;
+   }
+   
+   /* .four{
+      position: absolute;
+      bottom: 20vh;
+      left: 10vw;
+   } */
+   /* .image {
+      margin: 10%;
+      display: grid;
+      position:absolute;
+      grid-template-rows: 50% 50%;
+   } */
+   
+   .wp-page5 {
+      position: relative;
+      width: 25rem;
+   }
+   
+}
+@media(max-width:1080px) {
+   #page5{
+      display: none;
+   }
+   #container-page5 {
+       display: grid;
+       grid-template-columns: 1fr;
+       height: 100vh;
+       width: 100vw;
+   }
+   #left-page5{
+       padding:0px;
+       margin: 0px;
+   }
+   .test{
+       display: block;
+       height: 100vh;
+       width: 100vw;
+       padding-right: 5%;
+       margin-top: 50px;
+      
+      
+   }
+   h1{
+       font-size: 35px;
+       line-height: 1;
+   }
+   p{
+       font-size: 1rem;
+   }
+   h3{font-size: 2rem;}
+   #right-page5{
+       display: flex;
+       justify-content: flex-start;
+       background-color: rgb(12, 16, 19);
+       height: 80vh;
+       /* padding-top: 20px; */
+   }
+   .image{
+       display: none;
+     
+   }
+   .pay{
+       padding-top: 50px;
+       /* padding-bottom: 20px; */
+       height:70vh;
+       width: 70vw;
+       border-radius: 40px;
+   }
+   .learn{
+       /* font-size: rem; */
+       margin-bottom: 10px;
+       font-weight: 100;
+       height:auto;
+       width: auto;
+   }
+
+}
+@media(min-width:1081px){
+   .test{
+       display: none;
+       height: 80vh;
+       margin: 0;
+       padding: 0;
+}
+}
 
 
 
@@ -1167,6 +1421,14 @@ overflow-y: hidden;
 #card-1 {
    background-image: url(./images/wp\ payment\ img.jpg);
  }
+ /* #card-1:hover{
+   transform: scale(0.9);
+   transition-duration: 1.2s;
+   cursor: pointer;
+}
+#card-1::after{
+      transform: rotate3d(-1,1,0,15deg);  
+} */
  #card-2 {
    background-image: url(./images/wp\ ai\ img.jpg);
  }
@@ -1394,7 +1656,11 @@ span{
    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
    border:0.3vh solid black;
    border-radius: 3vh;
-   
+   }
+   #imageapg09:hover{
+      transform: scale(0.9);
+      transition-duration: 1.2s;
+      cursor: pointer;
    }
    
    #screen01pg09{
