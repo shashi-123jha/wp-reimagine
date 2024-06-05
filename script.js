@@ -16,6 +16,126 @@ document.addEventListener("mousemove" , function(dets){
 })
 
 
+const targetDiv = document.querySelector('#video-call-img img');
+
+// page3 
+
+targetDiv.addEventListener('mouseenter', () => {
+  crsr.style.scale=3
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "transparent"
+  crsr.innerHTML = '<h6> Video call </h6>'
+  crsr.style.fontSize = '8px'
+  crsr.style.display = 'flex';
+  crsr.style.justifyContent = 'center'
+ crsr.style.alignItems = 'center';
+ crsr.style.paddingLeft = '0.3vw';
+ crsr.style.placeItems = 'center';
+ crsr.style.color= '#1C1E21'
+
+ 
+
+});
+
+targetDiv.addEventListener('mouseleave', () => {
+  crsr.style.scale=1
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "red"
+  crsr.innerHTML = '';
+  
+
+});
+
+// page4 
+const targetDiv4 = document.querySelector('.left-page4 ');
+
+
+targetDiv4.addEventListener('mouseenter', () => {
+  crsr.style.scale=4
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "transparent"
+  crsr.innerHTML = '<h6>privacy</h6>'
+  crsr.style.fontSize = '8px'
+  crsr.style.display = 'flex';
+  crsr.style.justifyContent = 'center'
+ crsr.style.alignItems = 'center';
+ crsr.style.paddingLeft = '0.1vw';
+ crsr.style.placeItems = 'center';
+ crsr.style.color= '#25D366'
+});
+
+targetDiv4.addEventListener('mouseleave',  () => {
+  crsr.style.scale=1
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "#25D366"
+  crsr.innerHTML = '';
+  
+
+});
+
+// page 5
+
+const targetDiv5 = document.querySelector('#chat-call-img img');
+
+
+targetDiv5.addEventListener('mouseenter', () => {
+  crsr.style.scale=3
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "transparent"
+  crsr.innerHTML = '<h6> group chat </h6>'
+  crsr.style.fontSize = '8px'
+  crsr.style.display = 'flex';
+  crsr.style.justifyContent = 'center'
+ crsr.style.alignItems = 'center';
+ crsr.style.paddingLeft = '0.3vw';
+ crsr.style.placeItems = 'center';
+});
+
+targetDiv5.addEventListener('mouseleave', () => {
+  crsr.style.scale=1
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "red"
+  crsr.innerHTML = '';
+  
+
+});    
+
+
+// on hover the video on page 2 will pause 
+document.addEventListener('DOMContentLoaded', function () {
+  var video = document.getElementById('pau');
+  var pauseTimeout;
+
+  video.addEventListener('mouseover', function () {
+      pauseTimeout = setTimeout(function () {
+          video.pause();
+      }, 7500); // 2000 milliseconds = 2 seconds
+  });
+
+  video.addEventListener('mouseout', function () {
+      clearTimeout(pauseTimeout);
+      video.play();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var video = document.getElementById('pal');
+  var pauseTimeout;
+
+  video.addEventListener('mouseover', function () {
+      pauseTimeout = setTimeout(function () {
+          video.pause();
+      }, 7500); // 2000 milliseconds = 2 seconds
+  });
+
+  video.addEventListener('mouseout', function () {
+      clearTimeout(pauseTimeout);
+      video.play();
+  });
+});
+
+
+
 // on hover image will  be shown on  the page 
 
 document.querySelectorAll(".elem").forEach(function (elem) {
@@ -222,7 +342,7 @@ scrollTrigger: {
 },
 })
 
-gsap.from(".left-page4 ,#txt , #scroller ,#scroller-last h4  ",{
+/*gsap.from(".left-page4 ,#txt , #scroller ,#scroller-last h4  ",{
   y: 190,
 opacity: 0,
 duration: 3,
@@ -236,6 +356,7 @@ scrollTrigger: {
 },
 })
 
+*/
 
 gsap.from(" #left-page5 ,#right-page5  ",{
   y: 190,
