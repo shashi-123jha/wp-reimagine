@@ -871,65 +871,8 @@ to {
 
 
 #page5{
-   display: flex;
-   align-items: center;
-  justify-content: space-between  ;
-    height: auto;
-    width:100%;
-    z-index: 10;
-    background-color:#FCF5EB;
-    font-family: Arial, Helvetica, sans-serif;
- }
- 
- .left-page5{
-    top: 10vh;
-    height:100vh;
-    width:45vw;
-    padding-left: 5vw;
-    padding-right: 2vw;
-    padding-top: 15vh;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
- }
- .left-page5 h1{
-    font-size: 4.2vw;
-    font-weight: 400;
-    line-height: 5vw;
- }
- .left-page5 :hover{
-    padding-left: 8px;
- 
-    
- }
- 
- 
- .left-page5 p{
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    font-size: 1.5vw;
-    font-family: Arial, Helvetica, sans-serif;
- }
- #chat-call-img{
-  height: 100vh;
-  width: 55vw;
-  padding-top: 4vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  align-items: center;
-  justify-content: flex-end;
- 
- }
- #chat-call-img img{
-    height: 85vh;
-    width: 25vw;
- }
- #chat-call-img img:hover{
-   scale: 1.01;
-   
+  
 
-}
- 
 
 
 #page6{
@@ -1133,6 +1076,14 @@ overflow-y: hidden;
 #card-1 {
    background-image: url(./images/wp\ payment\ img.jpg);
  }
+ /* #card-1:hover{
+   transform: scale(0.9);
+   transition-duration: 1.2s;
+   cursor: pointer;
+}
+#card-1::after{
+      transform: rotate3d(-1,1,0,15deg);  
+} */
  #card-2 {
    background-image: url(./images/wp\ ai\ img.jpg);
  }
@@ -1456,7 +1407,11 @@ span{
    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
    border:0.3vh solid black;
    border-radius: 3vh;
-   
+   }
+   #imageapg09:hover{
+      transform: scale(0.9);
+      transition-duration: 1.2s;
+      cursor: pointer;
    }
    
    #screen01pg09{
