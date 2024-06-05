@@ -342,7 +342,7 @@ scrollTrigger: {
 },
 })
 
-/*gsap.from(".left-page4 ,#txt , #scroller ,#scroller-last h4  ",{
+gsap.from(".left-page4 ,#txt , #scroller ,#scroller-last h4  ",{
   y: 190,
 opacity: 0,
 duration: 3,
@@ -356,7 +356,7 @@ scrollTrigger: {
 },
 })
 
-*/
+
 
 gsap.from(" #left-page5 ,#right-page5  ",{
   y: 190,

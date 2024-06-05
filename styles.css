@@ -664,9 +664,7 @@ transition: all linear 0.5s;
 
 }
 
-#scroller-last{
-margin-bottom: 5vh;
-}
+
 
 
 @keyframes scroll {
