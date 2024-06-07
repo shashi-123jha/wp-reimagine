@@ -370,7 +370,7 @@ opacity: 0,
 delay:0.3,
 duration: 3,
 scrollTrigger: {
-  trigger: "#lower ",
+  trigger: "#middle h2 ",
   scroller: "body",
   // markers:true,
   start: "top 75%",
