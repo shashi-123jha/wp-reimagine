@@ -106,6 +106,10 @@ document.querySelector('#arrow').addEventListener('click', function() {
   window.location.href = '#page8';
 });
 
+document.querySelector('#arrow1').addEventListener('click', function() {
+  window.location.href = '#page1';
+});
+
 // page6 
 const targetDiv6 = document.querySelector('#webimg ');
 

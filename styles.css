@@ -610,7 +610,7 @@ padding: 5vw;
    height: auto;
    width:100%;
    z-index: 10;
-   background-color:#FCF5EB;
+   
    font-family: Arial, Helvetica, sans-serif;
    background-image: url(./images/back\ img.png);
 }
@@ -1513,12 +1513,87 @@ overflow-y: hidden;
       color: #24262b;
       background-color: #ffffff;
    }
+
+
+
+   
+
+  #arrow1{
+   height: 100px;
+   width: 100px;
+ 
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   border-radius: 50%;
+   left: 90%;
+   bottom: 5%;
+   border: 2px solid rgb(60, 236, 33);
+   padding-top: 1.2vh;
+   
+   z-index: 10;
+
+
+}
+
+ #arrow1:hover {
+   scale: 0.4;
+   background-color: #25D366;
+   transition: 0.5s;
+
+}
+ #arrow1 i{
+   font-size: 50px;
+font-weight: 800px;
+
+padding: 2vw;
+}
+
+ #arrow1 a{
+   text-decoration: none;
+   color: #000000;
+   
+   align-items: center;
+   justify-content: center;
+   font-size: 1.3vw;
+   padding-bottom: 1vh;
+   
+}
    
    @media(max-width: 767px){
      .footer-col{
        width: 50%;
        margin-bottom: 30px;
    }
+
+   
+
+  #arrow1{
+   height: 80px;
+   width: 80px;
+ 
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   border-radius: 50%;
+   left: 70%;
+   bottom: 5%;
+   border: 2px solid rgb(60, 236, 33);
+   padding-top: 1.2vh;
+   
+   z-index: 10;
+
+
+}
+
+
+
    }
    @media(max-width: 574px){
      .footer-col{
@@ -1541,7 +1616,7 @@ overflow-y: hidden;
 .left-page3{
    height:30vh;
    width:100vw;
-   background-color: #FCF5EB;
+  
    padding-left: 15vw;
    padding-right: 15vw;
    align-items: center;
