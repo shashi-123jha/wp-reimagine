@@ -101,6 +101,39 @@ targetDiv5.addEventListener('mouseleave', () => {
 });    
 
 
+// go down
+document.querySelector('#arrow').addEventListener('click', function() {
+  window.location.href = '#page8';
+});
+
+// page6 
+const targetDiv6 = document.querySelector('#webimg ');
+
+
+targetDiv6.addEventListener('mouseenter', () => {
+  crsr.style.scale=4
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "transparent"
+  crsr.innerHTML = '<h6>Web</h6>'
+  crsr.style.fontSize = '8px'
+  crsr.style.display = 'flex';
+  crsr.style.justifyContent = 'center'
+ crsr.style.alignItems = 'center';
+ crsr.style.paddingLeft = '0.1vw';
+ crsr.style.placeItems = 'center';
+ crsr.style.color= '#1C1E21'
+});
+
+targetDiv6.addEventListener('mouseleave',  () => {
+  crsr.style.scale=1
+  crsr.style.border = "1px solid #fff"
+  crsr.style.backgroundColor = "#25D366"
+  crsr.innerHTML = '';
+  
+
+});
+
+
 // on hover the video on page 2 will pause 
 document.addEventListener('DOMContentLoaded', function () {
   var video = document.getElementById('pau');

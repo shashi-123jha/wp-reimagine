@@ -73,13 +73,14 @@ html, body{
    width: 100%;
    z-index: 99;
    position: fixed;
-   background-color: #ff9f195a;
+   background-color: #111B21;
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding-left: 2vw;
    padding-right: 2vw;
    backdrop-filter: blur(14px);
+   
 }
 
 #hamburger{
@@ -102,6 +103,7 @@ html, body{
    justify-content: space-around;
    gap: 4vw;
    padding: 2vw;
+  
    
    
 
@@ -143,10 +145,14 @@ overflow: hidden;
    font-size: 1.6vw;
    color: rgb(39, 37, 37);
    font-weight: 600;
+   color: white;
+  
   
 }
 #others a:hover {
  color: green;
+ text-decoration:underline;
+ 
 }
 
 
@@ -197,19 +203,86 @@ overflow: hidden;
         position: relative;
         z-index: 8;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
    padding-top: 40vh;
         text-align: center;
         background-color: #fdf7ef22;
+        padding-bottom: 3vh;
  }
 
+
+  #arrow{
+   height: 100px;
+   width: 100px;
+ 
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   border-radius: 50%;
+   left: 90%;
+   bottom: 5%;
+   border: 2px solid rgb(60, 236, 33);
+   padding-top: 1.2vh;
+   
+   z-index: 10;
+
+
+}
+
+#page1 #arrow:hover {
+   scale: 0.4;
+   background-color: #25D366;
+   transition: 0.5s;
+
+}
+
+#page1 #arrow i{
+   font-size: 50px;
+font-weight: 800px;
+
+padding: 2vw;
+}
+
+#page1 #arrow a{
+   text-decoration: none;
+   color: #000000;
+   
+   align-items: center;
+   justify-content: center;
+   font-size: 1.3vw;
+   padding-bottom: 1vh;
+   
+}
+
+
+ #page1 h3{
+   font-size: 4vw;
+   font-weight: 600;
+   color: #000000;
+  
+
+ }
  #page1 h1 {
+   
    font-size: 13vw;
    font-weight: 900;
    position: relative;
    color: #4BAF70;
    display: inline-block;
+
+}
+
+#page1 p {
+   
+   font-size: 1.4vw;
+   font-weight: 300;
+   position: relative;
+
 
 }
 #page1 h1::before{
@@ -481,6 +554,7 @@ padding: 5vw;
    z-index: 10;
    background-color:#FCF5EB;
    font-family: Arial, Helvetica, sans-serif;
+   background-image: url(./images/back\ img.png);
 }
 
 .left-page3{
@@ -542,20 +616,27 @@ padding: 5vw;
       width: 100vw;
        z-index: 9;
       display: flex;
-     flex-wrap: wrap;
-   
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+       background-color: #111B22;
       
    }
    #upper{
-      height: auto;
+      height: 30vh;
       width: 100%;
-
+    
+     
+     
+     
+   
    }
    #upper video {
-      height: auto;
+      height: 100%;
       width: 100%;
       object-fit: cover;
       z-index: 999; 
+     
     }
    
    
@@ -566,9 +647,11 @@ padding: 5vw;
       z-index: 999;
     }  
     #middle {
-      height: auto;
+      height: 40vh;
       width: 100%;
-  align-items: center;
+   
+   display: flex;
+   align-items: center;
    justify-content: center;
    padding: 5vw;
     }
@@ -580,7 +663,7 @@ padding: 5vw;
     }
    
     #lower{
-      height: auto;
+      height: 30vh;
       width: 100%;
     
    
@@ -598,7 +681,8 @@ padding: 5vw;
    position: relative;
    align-items: center;
    justify-content: space-around;
-   z-index: 10;
+   z-index: 9;
+   background-image: url(./images/back\ black.png);
 }
 
 #page4-main{
@@ -619,7 +703,9 @@ padding: 5vw;
    overflow-y: hidden;
    position: relative;
    z-index: 10;
-   padding: 1vw;
+   margin-bottom: 9vh;
+   padding: 3vh;
+   
 
 
 }
@@ -728,18 +814,34 @@ from {
       align-items: center;
       justify-content: center;
       flex-direction: column-reverse;
+      height: 100vh;
+      top: 14vh;
    
       
 
      }
 
+     #scroller{
+      
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: relative;
+      z-index: 10;
+      margin-bottom: 1vh;
+      padding: 2vh;
+      height: 10vh;
+      
+   
+   
+   }
+   
    
    #scroller h4 {
       display: inline-block;
       font-size: 13vw;
       font-weight:500;
-     padding: auto;
-   
+
    }
 
    .left-page4{
@@ -926,6 +1028,11 @@ to {
  }
  #chat-call-img img:hover{
    scale: 1.01;
+
+}
+
+#webimg:hover{
+   scale: 1.01;
    
 
 }
@@ -937,7 +1044,7 @@ to {
    width: 100%;
    z-index: 10;
    position: relative;
-   background-color: #FDF7EF;
+   background: linear-gradient(to bottom,#FBF6EE, #FCF5EB,#FCF6EE);
 }
 
 .container-page6{
@@ -1013,6 +1120,12 @@ to {
    font-size: 1.1rem;
    color: rgb(107, 164, 21);
 
+}
+
+.cont-page6 :hover{
+   padding-left: 8px;
+
+   
 }
 
 @media (max-width:1024px) {
@@ -1092,8 +1205,7 @@ to {
 #page7{
    height: 100vh;
    width: 100%;
-   background-color: #FDF7EF;
-   
+   background: linear-gradient(to bottom,#FDF7EF, #c8d3cc,#D7E2DB);
     z-index: 10;
     align-items: center;
     justify-content: center;
@@ -1116,6 +1228,11 @@ margin-top: 5vh;
 padding-left: 5vw;
 padding-right: 5vw;
 
+
+padding-top: 2vh;
+padding-bottom: 2vh;
+
+
 }
 
 .card{
@@ -1126,6 +1243,9 @@ overflow-y: hidden;
    background-size: cover;
    background-position: center;
    transition: all ease 0.6s;
+   border: 3px solid black;
+   
+
 
 
 }
