@@ -375,6 +375,7 @@ scrollTrigger: {
 },
 })
 
+/*
 gsap.from(".left-page4 ,#txt , #scroller ,#scroller-last h4  ",{
   y: 190,
 opacity: 0,
@@ -388,6 +389,7 @@ scrollTrigger: {
   scrub: 3,
 },
 })
+*/
 
 
 
