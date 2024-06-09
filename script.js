@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
   video.addEventListener('mouseover', function () {
       pauseTimeout = setTimeout(function () {
           video.pause();
-      }, 7500); // 2000 milliseconds = 2 seconds
+      }, 0.6); // 2000 milliseconds = 2 seconds
   });
 
   video.addEventListener('mouseout', function () {
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function () {
   video.addEventListener('mouseover', function () {
       pauseTimeout = setTimeout(function () {
           video.pause();
-      }, 7500); // 2000 milliseconds = 2 seconds
+      }, 0.6); // 2000 milliseconds = 2 seconds
   });
 
   video.addEventListener('mouseout', function () {
