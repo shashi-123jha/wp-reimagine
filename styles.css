@@ -1,3 +1,6 @@
+
+
+
 *{
    margin: 0;
    padding: 0;
@@ -7,6 +10,7 @@
 html, body{
     height: 100%;
     width: 100%;
+   
 }
 
 .left-page3 a{
@@ -63,6 +67,8 @@ html, body{
 #main1{
    position: relative;
    overflow: hidden;
+   
+  
 }
 
 
@@ -210,6 +216,7 @@ overflow: hidden;
         text-align: center;
         background-color: #fdf7ef22;
         padding-bottom: 3vh;
+        
  }
 
 
@@ -673,7 +680,8 @@ padding: 5vw;
       height:60vh;
       width: 100vw;
       margin: 0;
-      padding: 0;
+     padding-top: 5vh;
+     padding-bottom: 5vh;
       gap: 0;
       display: flex;
       justify-content: center;
@@ -1286,15 +1294,102 @@ to {
 
 #page7{
    height: 100vh;
-   width: 100%;
-   background: linear-gradient(to bottom,#FDF7EF, #c8d3cc,#D7E2DB);
-    z-index: 10;
-    align-items: center;
-    justify-content: center;
+   width: auto;
+  
+ 
+   
+    display: flex;
+
+   
+  
+
+
+   
+    
+   
+ 
+
+
+
     
     
   
 }
+#left-page7{
+   height: 100vh;
+   width: 80vw;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding-left: 4vw;
+color: white;
+
+background-color: #0B141A;
+
+
+}
+
+#left-page7 h1{
+font-size: 3vw;
+font-weight: 600;
+
+}
+ #ggg {
+   color:#25D366 ;
+}
+
+#content-page7{
+   padding-left: 2vw;
+   top: 20vh !important;
+}
+
+#navigation-page7{
+   height: fit-content;
+   width: max-content;
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5vw;
+   margin-top: 2vw;
+}
+
+#navigation-page7 i {
+   font-size: 3vw;
+}
+
+
+#rignt-page7{
+   height: 100vh;
+   width: auto;
+   background-color: #0B141A;
+   padding-right: 15vw;
+   
+   overflow-x: scroll !important;
+overflow: scroll;
+
+
+
+
+}
+
+#back-page7{
+   border: 2px solid white;
+   border-radius: 50%;
+   padding: 2vw;
+   color: wheat;
+
+}
+
+#forward-page7{
+   border: 2px solid white;
+   border-radius: 50%;
+   padding: 2vw;
+   color: wheat;
+   
+}
+
 
 #cards-container{
   
@@ -1302,30 +1397,34 @@ to {
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 77px;
-   position: relative;
+   gap: 20px;
+   
    z-index: 10;
-   overflow: hidden;
+ 
 margin-top: 5vh;
-padding-left: 5vw;
+padding-left: 60vw;
 padding-right: 5vw;
 
-
+position: relative;
 padding-top: 2vh;
 padding-bottom: 2vh;
 
 
 }
 
+
+
 .card{
-   height: 99%;
-   width: 21vw;
-overflow-y: hidden;
+   height:50vh;
+   width: 25vw;
+ 
+
    border-radius: 10px;
    background-size: cover;
    background-position: center;
    transition: all ease 0.6s;
-   border: 3px solid black;
+   border: 3px solid green;
+
    
 
 
@@ -1334,6 +1433,7 @@ overflow-y: hidden;
 
 #card-1 {
    background-image: url(./images/wp\ payment\ img.jpg);
+  
  }
  #card-2 {
    background-image: url(./images/wp\ ai\ img.jpg);
@@ -1354,7 +1454,7 @@ overflow-y: hidden;
 
  .overlay {
    height: 100%;
-   width: 100%; 
+   width: 25vw; 
    background-color: #43CD66;
    border-radius: 10px;
    padding: 30px;
@@ -1398,9 +1498,12 @@ font-weight: 800;
    background-color: #FDF7EF;
 
 
+
+
     
   
 }
+
 
 #cards-container{
 display: flex;
@@ -1610,7 +1713,7 @@ padding: 2vw;
    flex-direction: column;
    height: 100vh;
    width: 100vw; 
-   padding-top: 3vh !important;
+ 
   
    
 }
@@ -1618,7 +1721,7 @@ padding: 2vw;
 .left-page3{
    height:30vh;
    width:100vw;
-  
+
    padding-left: 15vw;
    padding-right: 15vw;
    align-items: center;
@@ -1707,12 +1810,15 @@ span{
 
 @media (max-width:765px) {
    #video-call-img img{
-      height: 45vh;
+      height: 50vh;
       width: 41vw;
+      padding-top: 7vh;
    
    }
    #video-call-img{
-      padding-top: 5vh;
+      height: 70vh;
+      width: 100vw;
+      padding-top: 9vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1850,3 +1956,28 @@ span{
             
             }
    }
+
+
+
+   #page7exp{
+      height: 100vh;
+      width: 100vw;
+      background-color: black;
+
+
+
+   direction: ltr;
+   line-height: 1.34;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 12px;
+   color: #1c1e21;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   visibility: visible!important;
+   overflow: hidden;
+   border-bottom: 40px;
+   border-bottom-style: solid;
+   background-color: #0B141A;
+   border-bottom-color: #111B21;
+
+}

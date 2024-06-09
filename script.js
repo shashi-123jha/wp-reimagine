@@ -370,7 +370,7 @@ opacity: 0,
 delay:0.3,
 duration: 3,
 scrollTrigger: {
-  trigger: "#middle h2 ",
+  trigger: "#page2 ",
   scroller: "body",
   // markers:true,
   start: "top 75%",
@@ -474,3 +474,23 @@ scrollTrigger: {
   scrub: 2,
 },
 })
+
+
+
+// page7 scroll
+document.getElementById('forward-page7').addEventListener('click', function() {
+  var scrollContainer = document.getElementById('rignt-page7');
+  scrollContainer.scrollBy({
+    top: 0,
+    left: 400, // Amount to scroll by (change as needed)
+    behavior: 'smooth' // Smooth scrolling
+  });
+});
+document.getElementById('back-page7').addEventListener('click', function() {
+  var scrollContainer = document.getElementById('rignt-page7');
+  scrollContainer.scrollBy({
+    top: 0,
+    left: -400, // Amount to scroll by (negative value for left direction)
+    behavior: 'smooth' // Smooth scrolling
+  });
+});
