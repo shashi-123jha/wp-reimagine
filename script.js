@@ -110,6 +110,12 @@ document.querySelector('#arrow1').addEventListener('click', function() {
   window.location.href = '#page1';
 });
 
+// ham burger 
+
+document.querySelector('#hamburger i').addEventListener('click', function() {
+  window.location.href = '#page1';
+});
+
 // page6 
 const targetDiv6 = document.querySelector('#webimg ');
 
@@ -494,3 +500,18 @@ document.getElementById('back-page7').addEventListener('click', function() {
     behavior: 'smooth' // Smooth scrolling
   });
 });
+
+// hamburger screen scroll off 
+const openModalBtn = document.getElementById('hamburger i');
+const modal = document.getElementById('full');
+
+openModalBtn.addEventListener('click', () => {
+  modal.style.display = 'block';
+  document.modal.classList.add('noscroll');
+});
+
+
+// pge5exp scroll in horozontal direction 
+
+
+// script.js

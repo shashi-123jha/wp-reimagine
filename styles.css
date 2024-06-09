@@ -96,6 +96,7 @@ html, body{
    align-items: center;
    justify-content: center;
    display: none;
+   overflow: hidden;
 
    
 
@@ -496,6 +497,8 @@ width: 4vh;
       padding-top: 10vh;
       padding-left: 5vh;
       padding-right: 8vw;
+    
+      
    }
 
    
@@ -1139,6 +1142,7 @@ to {
  
 
 
+
 #page6{
    height: calc(100vh + 14vh);
    width: 100%;
@@ -1375,6 +1379,23 @@ overflow: scroll;
 
 }
 
+#back-page7:hover {
+   scale: 0.7;
+   background-color: #25D366;
+   transition: 0.5s;
+   cursor: pointer;
+
+}
+
+
+#forward-page7:hover {
+   scale: 0.7;
+   background-color: #25D366;
+   transition: 0.5s;
+   cursor: pointer;
+
+}
+
 #forward-page7{
    border: 2px solid white;
    border-radius: 50%;
@@ -1503,6 +1524,7 @@ font-weight: 800;
    justify-content: center;
    flex-direction: column;
    padding-left: 4vw;
+   padding-right: 2vw;
    color: white;
    
    background-color: #0B141A;
