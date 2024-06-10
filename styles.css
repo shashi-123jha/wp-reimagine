@@ -1112,6 +1112,7 @@ to {
     padding-bottom: 2vw;
     font-size: 1.5vw;
     font-family: Arial, Helvetica, sans-serif;
+    
  }
  #chat-call-img{
   height: 100vh;
@@ -1139,9 +1140,7 @@ to {
    
 
 }
- 
-
-
+  
 
 #page6{
    height: calc(100vh + 14vh);
@@ -2066,4 +2065,70 @@ span{
 
 
 
+   #page10{
+      justify-content: center;
+      height: fit-content;
+      width: auto;
+      background-color: #0B141A;
+      align-items: center;
+    
+   }
+
    
+
+   .ultra-slider-section {
+     width: 100%;
+     height: 90vh;
+     overflow: hidden;
+   
+     display: flex;
+     left: 0;
+     padding-left: 150px !important;
+     
+     box-sizing: border-box !important;
+    background-color: #0B141A;
+   }
+   
+   .ultra-slider-container {
+     display: flex;
+   }
+   
+   .ultra-slider-card-container {
+     display: flex;
+     width: 70vw;
+   }
+   .ultra-slider-card-col1 {
+     position: relative;
+     width: 50%;
+   
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .ultra-slider-img1 {
+     position: absolute;
+     width: 95%;
+     border-radius: 2vw;
+   }
+   
+ 
+   
+   .ultra-slider-card-col2 {
+     width: 60%;
+   
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding-left: 2vw;
+     padding-right: 2vw;
+   }
+   
+   .ultra-slider-title {
+     text-transform: uppercase;
+     font-size: 6.2vw;
+     color: #F2F3F3;
+   }
+   
+  

@@ -22,6 +22,11 @@
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
 
 </head >
 <body >
@@ -30,6 +35,16 @@
     <div id="cursor"></div>
 
 
+    <div id="full">
+                 
+      <h4><a href="#">Let's Explore</i></a></h4>
+      <h4><a href="#">What's New</a></h4>
+      <h4><a href="https://web.whatsapp.com/">WhatsApp Web</a></h4>
+      <h4><a href="#">Assistance</a></h4>
+      <h4><a href="#">About Us</a></h4>
+        
+      <i class="ri-menu-line"></i>
+    </div>
 
 
 
@@ -64,17 +79,7 @@
              
                
             </div>
-            <div id="full">
-                 
-              <h4><a href="#">Let's Explore</i></a></h4>
-              <h4><a href="#">What's New</a></h4>
-              <h4><a href="https://web.whatsapp.com/">WhatsApp Web</a></h4>
-              <h4><a href="#">Assistance</a></h4>
-              <h4><a href="#">About Us</a></h4>
-                
-              <i class="ri-menu-line"></i>
-            </div>
-
+           
        <div id="baa">
             <video
             autoplay
@@ -243,11 +248,102 @@
         
         </div>
 
+        <div id="page10">
+      
+ 
+              <div class="ultra-slider-section">
+                <div class="ultra-slider-container">
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/stay connected.png">
+                   
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">Stay
+                        connected</div>
+                    </div>
+                  </div>
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/build community.png">
+                     
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">Build
+                        community</div>
+                    </div>
+                  </div>
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/express yourself.png">
+                   
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">Express
+                        yourself
+                        </div>
+                    </div>
+                  </div>
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/whatsapp bushness.png">
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">WhatsApp
+                        business</div>
+                    </div>
+                  </div>
+            
+                </div>
+           
 
+              
+            
+            </div>
+            
+         
+         
+          
+        </div>
 
-
-
-
+         <script>
+           
+          
+          
+            gsap.registerPlugin(ScrollTrigger);
+          
+            window.addEventListener("DOMContentLoaded", () => {
+             
+              ultraSliderAnimation();
+            });
+         
+          
+            const ultraSliderAnimation = () => {
+              const section = document.querySelector(".ultra-slider-section");
+              const container = document.querySelector(".ultra-slider-container");
+          
+              ScrollTrigger.create({
+                animation: gsap.to(".ultra-slider-container", {
+                  x: () => -(container.scrollWidth - section.offsetWidth) + "px",
+                  ease: "none",
+                }),
+                trigger: section,
+                start: "top top",
+                end: () => "+=" + (container.scrollWidth - section.offsetWidth),
+                scrub: 1,
+                pin: true,
+                anticipatePin: 1
+              });
+            };
+          
+          
+          </script>
+    
+        
 
         <div id="page6">
           <div class="container-page6">
@@ -340,6 +436,27 @@
               
 
     </div>
+
+    <script>
+    document.getElementById('forward-page7').addEventListener('click', function() {
+      var scrollContainer = document.getElementById('rignt-page7');
+      scrollContainer.scrollBy({
+        top: 0,
+        left: 400, // Amount to scroll by (change as needed)
+        behavior: 'smooth' // Smooth scrolling
+      });
+    });
+    document.getElementById('back-page7').addEventListener('click', function() {
+      var scrollContainer = document.getElementById('rignt-page7');
+      scrollContainer.scrollBy({
+        top: 0,
+        left: -400, // Amount to scroll by (negative value for left direction)
+        behavior: 'smooth' // Smooth scrolling
+      });
+    });
+    
+    
+    </script>
        
     
     </div>
@@ -425,21 +542,19 @@
     
     </div>
 
+ 
 
 </div>
 
 
 
-</div>
+
 
     
+<!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
 
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    
     <script src="script.js"></script>
 </body>
