@@ -116,6 +116,7 @@ document.querySelector('#hamburger i').addEventListener('click', function() {
   window.location.href = '#page1';
 });
 
+
 // page6 
 const targetDiv6 = document.querySelector('#webimg ');
 

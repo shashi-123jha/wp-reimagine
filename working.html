@@ -524,7 +524,108 @@
     
     </div>
 
- 
+<div id="page11">
+    <div class="spacer"></div>
+<section class="work2">
+  <div class="gallery_box">
+    <div class="gallery_box_outer">
+      <div class="gallery_box_in" style="background: black;">
+      </div>
+      <div class="gallery_box_in" style="background: yellow;">
+      </div>
+      <div class="gallery_box_in" style="background: red;">
+      </div>
+      <div class="gallery_box_in" style="background: pink;">
+      </div>
+      <div class="gallery_box_in" style="background: blue;">
+      </div>
+      <div class="gallery_box_in" style="background: green;">
+      </div>
+      <div class="gallery_box_in" style="background: purple;">
+      </div>
+      <div class="gallery_box_in" style="background: lightgrey;">
+      </div>
+      <div class="gallery_box_in" style="background: orange;">
+      </div>
+    </div>
+  </div>
+</section>
+<div class="spacer"></div>
+
+</div>
+
+<script>console.clear();
+
+  CircularCards();
+  
+  function CircularCards() {
+    const cards = gsap.utils.toArray(".gallery_box_in");
+    const total = cards.length;
+    const time = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".gallery_box",
+        start: "clamp(top top)",
+        end: "bottom+=3000px center-=200px",
+        scrub: true,
+        pin: true,
+        refreshPriority: 1,
+        preventOverlaps: true,
+        pinSpacing: true,
+        markers: true
+      }
+    });
+    time.to(".gallery_box_outer", {
+      duration: total,
+      rotateY: 360,
+      ease: "none"
+    });
+  
+    cards.forEach((card, i) => {
+      if (i) {
+        time.to(
+          cards[total - i],
+          {
+            opacity: 0,
+            duration: 0.25,
+            ease: "none"
+          },
+          i + 0.75
+        );
+        if (i < cards.length - 1) {
+          time.to(
+            cards[total - i - 1],
+            {
+              opacity: 1,
+              duration: 0.25,
+              ease: "none"
+            },
+            i + 0.5
+          );
+        }
+      } else {
+        console.log("else", i);
+        time
+          .to(
+            card,
+            {
+              opacity: 0,
+              ease: "none"
+            },
+            0.75
+          )
+          .to(
+            cards[total - i - 1],
+            {
+              opacity: 1,
+              duration: 0.25,
+              ease: "none"
+            },
+            0.5
+          );
+      }
+    });
+  }
+  </script>
 
 </div>
 

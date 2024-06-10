@@ -2095,11 +2095,11 @@ span{
    
    .ultra-slider-card-container {
      display: flex;
-     width: 70vw;
+     width: 75vw;
    }
    .ultra-slider-card-col1 {
      position: relative;
-     width: 50%;
+     width: 45%;
    
      display: flex;
      justify-content: center;
@@ -2115,7 +2115,7 @@ span{
  
    
    .ultra-slider-card-col2 {
-     width: 60%;
+     width: 55%;
    
      display: flex;
      flex-direction: column;
@@ -2133,10 +2133,13 @@ span{
    
    @media (max-width:466px){
 
+       #cursor{
+         display: none;
+       }
 
       #page10{
          justify-content: center;
-         height: fit-content;
+         height: auto;
          width: auto;
          background-color: #0B141A;
          align-items: center;
@@ -2149,7 +2152,7 @@ span{
         width: 100%;
         height: 90vh;
         overflow: hidden;
-      margin-top: 10vh !important;
+    
        left: 0 !important;
        padding-left: 0 !important;
 
@@ -2173,7 +2176,7 @@ span{
       }
       .ultra-slider-card-col1 {
         position: relative;
-        width: 60%;
+        width: 45%;
       
         display: flex;
         justify-content: center;
@@ -2190,7 +2193,7 @@ span{
     
       
       .ultra-slider-card-col2 {
-        width: 60%;
+         width: 55%;
       margin-top: 28vh;
         display: flex;
         flex-direction: column;
