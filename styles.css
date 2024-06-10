@@ -2131,4 +2131,79 @@ span{
      color: #F2F3F3;
    }
    
-  
+   @media (max-width:466px){
+
+
+      #page10{
+         justify-content: center;
+         height: fit-content;
+         width: auto;
+         background-color: #0B141A;
+         align-items: center;
+       
+      }
+   
+      
+   
+      .ultra-slider-section {
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+      margin-top: 10vh !important;
+       left: 0 !important;
+       padding-left: 0 !important;
+
+        
+        
+        box-sizing: border-box !important;
+       background-color: #0B141A;
+      }
+      
+      .ultra-slider-container {
+        display: flex;
+      }
+      
+      .ultra-slider-card-container {
+        display: flex;
+        width: 90vw;
+       flex-direction: column;
+       align-items: center;
+
+      justify-content: center;
+      }
+      .ultra-slider-card-col1 {
+        position: relative;
+        width: 60%;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .ultra-slider-img1 {
+        position: absolute;
+        width: 70vw !important;
+        height: 70vw;
+        border-radius: 2vw;
+      }
+      
+    
+      
+      .ultra-slider-card-col2 {
+        width: 60%;
+      margin-top: 28vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      
+       
+      }
+      
+      .ultra-slider-title {
+        text-transform: uppercase;
+        font-size: 7.2vw;
+        color: #F2F3F3;
+      }
+     
+   }
