@@ -59,10 +59,52 @@ html, body{
    
 }
 #loader h1 {
-   font-size: 3vw;
-   font-weight: 700;
+   font-size: 6vw;
+   font-weight: 600;
    color: #49D87C;
+   border-left: #24D366 dotted;
+   border-right: #24D366 dotted;
+   border-radius: 20%;
+   padding-left: 1vw;
+   padding-right: 1vw;
 }
+
+@media screen and (max-width: 568px) {
+
+   #loader{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      background-color: #111B21;
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      gap: 3vw;
+      overflow-x: hidden;
+      
+   }
+   #loader h1 {
+      font-size: 11vw;
+      font-weight: 600;
+      color: #49D87C;
+      border-left: #24D366 dotted;
+      border-right: #24D366 dotted;
+      border-radius: 20%;
+      padding-left: 1vw;
+      padding-right: 1vw;
+   }
+
+   #loader img{
+      height: 12vw;
+      width: 12vw;
+      font-weight: 1000;
+   }
+
+}
+
+
 
 #main1{
    position: relative;
@@ -511,6 +553,7 @@ width: 4vh;
       padding: 1vw;
 
    }
+ 
    #full h4 a {
       text-decoration: none;
       font-size: 7vw;
@@ -2145,7 +2188,9 @@ span{
          align-items: center;
        
       }
-   
+   #page10{
+      padding-top: 10vh;
+   }
       
    
       .ultra-slider-section {
@@ -2155,6 +2200,7 @@ span{
     
        left: 0 !important;
        padding-left: 0 !important;
+       
 
         
         
@@ -2210,3 +2256,5 @@ span{
       }
      
    }
+
+   

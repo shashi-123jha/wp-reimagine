@@ -36,12 +36,14 @@
 
 
     <div id="full">
-                 
+                
       <h4><a href="#">Let's Explore</i></a></h4>
       <h4><a href="#">What's New</a></h4>
       <h4><a href="https://web.whatsapp.com/">WhatsApp Web</a></h4>
       <h4><a href="#">Assistance</a></h4>
       <h4><a href="#">About Us</a></h4>
+
+
         
       <i class="ri-menu-line"></i>
     </div>
@@ -62,7 +64,7 @@
               </div>
                
               <div id="others">
-                <a class="h" href="./explore.html">Let's Explore<i class="ri-arrow-down-s-line"></i></a>
+                <a class="h" href=".">Let's Explore<i class="ri-arrow-down-s-line"></i></a>
                 <a class="h" href="#">What's New</a>
                 <a class="h" href="https://web.whatsapp.com/">WhatsApp Web</a>
                 <a class="h" href="#">Assistance</a>
@@ -89,14 +91,15 @@
       
         </div>
      
- <!--
+
          
 <div id="loader">
         <img src="./images/wp_new_logo-removebg-preview.png" alt="">
         <h1>Whatsapp</h1>
+        
         </div> 
 
-        -->
+       
 
     <div id="page1"> 
         <h1>Whatsapp.</h1> 
@@ -250,101 +253,7 @@
         
         </div>
 
-        <div id="page10">
       
- 
-              <div class="ultra-slider-section">
-                <div class="ultra-slider-container">
-            
-                  <div class="ultra-slider-card-container">
-                    <div class="ultra-slider-card-col1">
-                      <img class="ultra-slider-img1" src="./images/stay connected.png">
-                   
-                    </div>
-                    <div class="ultra-slider-card-col2">
-                      <div class="ultra-slider-title">Stay
-                        connected</div>
-                    </div>
-                  </div>
-            
-                  <div class="ultra-slider-card-container">
-                    <div class="ultra-slider-card-col1">
-                      <img class="ultra-slider-img1" src="./images/build community.png">
-                     
-                    </div>
-                    <div class="ultra-slider-card-col2">
-                      <div class="ultra-slider-title">Build
-                        community</div>
-                    </div>
-                  </div>
-            
-                  <div class="ultra-slider-card-container">
-                    <div class="ultra-slider-card-col1">
-                      <img class="ultra-slider-img1" src="./images/express yourself.png">
-                   
-                    </div>
-                    <div class="ultra-slider-card-col2">
-                      <div class="ultra-slider-title">Express
-                        yourself
-                        </div>
-                    </div>
-                  </div>
-            
-                  <div class="ultra-slider-card-container">
-                    <div class="ultra-slider-card-col1">
-                      <img class="ultra-slider-img1" src="./images/whatsapp bushness.png">
-                    </div>
-                    <div class="ultra-slider-card-col2">
-                      <div class="ultra-slider-title">WhatsApp
-                        business</div>
-                    </div>
-                  </div>
-            
-                </div>
-           
-
-              
-            
-            </div>
-            
-         
-         
-          
-        </div>
-
-         <script>
-           
-          
-          
-            gsap.registerPlugin(ScrollTrigger);
-          
-            window.addEventListener("DOMContentLoaded", () => {
-             
-              ultraSliderAnimation();
-            });
-         
-          
-            const ultraSliderAnimation = () => {
-              const section = document.querySelector(".ultra-slider-section");
-              const container = document.querySelector(".ultra-slider-container");
-          
-              ScrollTrigger.create({
-                animation: gsap.to(".ultra-slider-container", {
-                  x: () => -(container.scrollWidth - section.offsetWidth) + "px",
-                  ease: "none",
-                }),
-                trigger: section,
-                start: "top top",
-                end: () => "+=" + (container.scrollWidth - section.offsetWidth),
-                scrub: 1,
-                pin: true,
-                anticipatePin: 1
-              });
-            };
-          
-          
-          </script>
-    
         
 
         <div id="page6">
@@ -481,6 +390,102 @@
 
 
     </div>
+
+      <div id="page10">
+      
+ 
+              <div class="ultra-slider-section">
+                <div class="ultra-slider-container">
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/stay connected.png">
+                   
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">Stay
+                        connected</div>
+                    </div>
+                  </div>
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/build community.png">
+                     
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">Build
+                        community</div>
+                    </div>
+                  </div>
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/express yourself.png">
+                   
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">Express
+                        yourself
+                        </div>
+                    </div>
+                  </div>
+            
+                  <div class="ultra-slider-card-container">
+                    <div class="ultra-slider-card-col1">
+                      <img class="ultra-slider-img1" src="./images/whatsapp bushness.png">
+                    </div>
+                    <div class="ultra-slider-card-col2">
+                      <div class="ultra-slider-title">WhatsApp
+                        business</div>
+                    </div>
+                  </div>
+            
+                </div>
+           
+
+              
+            
+            </div>
+            
+         
+         
+          
+        </div>
+
+         <script>
+           
+          
+          
+            gsap.registerPlugin(ScrollTrigger);
+          
+            window.addEventListener("DOMContentLoaded", () => {
+             
+              ultraSliderAnimation();
+            });
+         
+          
+            const ultraSliderAnimation = () => {
+              const section = document.querySelector(".ultra-slider-section");
+              const container = document.querySelector(".ultra-slider-container");
+          
+              ScrollTrigger.create({
+                animation: gsap.to(".ultra-slider-container", {
+                  x: () => -(container.scrollWidth - section.offsetWidth) + "px",
+                  ease: "none",
+                }),
+                trigger: section,
+                start: "top top",
+                end: () => "+=" + (container.scrollWidth - section.offsetWidth),
+                scrub: 1,
+                pin: true,
+                anticipatePin: 1
+              });
+            };
+          
+          
+          </script>
+    
 <div id="page8">
 
   <footer class="footer">
