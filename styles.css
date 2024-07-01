@@ -343,12 +343,12 @@ padding: 2vw;
  margin-bottom: 2vh;
 }
 #page1 h1::before{
-   content: "Whatsapp.";
+   content: "WhatsApp.";
    position: absolute;
    color: black;
    top: -6px;
    left: -6px;
-   -webkit-text-stroke: 2px #86AF1C;
+   -webkit-text-stroke: 3px #86AF1C;
    z-index: -1;
 }
  
@@ -1507,22 +1507,23 @@ padding-bottom: 2vh;
 }
 
 #card-1 {
-   background-image: url(./images/wp\ payment\ img.jpg);
+   background-image: url(./images/payment\ new.png);
   
  }
  #card-2 {
-   background-image: url(./images/wp\ ai\ img.jpg);
+   background-image: url(./images/whatsnew2.png);
  }
  #card-3 {
-   background-image: url(./images/wp\ status\ img.jpg);
+   background-image: url(./images/status.n.png);
  }
 
- #card-4 {
-   background-image: url(./images/wp\ status\ img.jpg);
- }
 
  #card-5 {
-   background-image: url(./images/wp\ payment\ img.jpg);
+   background-image: url(./images/channel.n.png);
+ }
+
+ #card-6 {
+   background-image: url(./images/wp\ buisseness.png);
  }
 
 
