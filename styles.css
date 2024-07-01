@@ -2065,14 +2065,15 @@ span{
    }
 
    #heading01pg09{
-   font-size: 6vh;
+   font-size: 8vh;
+   font-weight: 500;
    color: rgb(37 211 102);
    }
 
    #description01pg09{
    height: 10vhv;
    width: 29vw;
-   font-size: larger;
+   font-size: x-large;
    margin-bottom: 2vh;
    }
    #content01pg09 a{
