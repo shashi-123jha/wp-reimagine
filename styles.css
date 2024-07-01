@@ -258,7 +258,7 @@ overflow: hidden;
         justify-content: center;
    padding-top: 40vh;
         text-align: center;
-        background-color: #fdf7ef22;
+        background-color: #fdf7ef0b;
         padding-bottom: 3vh;
         
  }
@@ -321,7 +321,7 @@ padding: 2vw;
  }
  #page1 h1 {
    
-   font-size: 13vw;
+   font-size: 11vw;
    font-weight: 900;
    position: relative;
    color: #4BAF70;
@@ -378,7 +378,7 @@ padding: 2vw;
 
    
     #page1 h3{
-      font-size: 7vw;
+      font-size: 6vw;
       font-weight: 500;
       color: #1a1818;
      
@@ -473,7 +473,7 @@ width: 4vh;
    #logo h2 {
       display: inline-block;
    overflow: hidden;
-   font-weight: 600;
+   font-weight: 800;
    font-size: 4vw;
   
    
@@ -1183,6 +1183,20 @@ to {
    
 
 }
+#page5 a {
+   text-decoration: none;
+}
+#page5 a:hover{
+   font-size: 1.1rem;
+   color: rgb(107, 164, 21);
+
+}
+
+#page6 a:hover{
+   font-size: 1.1rem;
+   color: rgb(107, 164, 21);
+
+}
   
 
 #page6{
@@ -1240,6 +1254,7 @@ to {
 .cont-page6 a{
    padding-bottom: 2rem;
    color: #000;
+   text-decoration: none;
 }
 
 .bx-page6{
@@ -1551,6 +1566,31 @@ font-weight: 800;
 @media (max-width:900px) {
 
 
+   .overlay {
+      height: 100%;
+      width: 100%; 
+      background-color: #43CD66;
+      border-radius: 10px;
+      padding: 30px;
+      padding-top: 7vh;
+      opacity: 0;
+      transition: all ease 0.5s;
+
+   }
+
+   .overlay h4 {
+      color: black;
+   font-size: 7vw;
+   white-space: nowrap;
+   margin-bottom: 20px;
+   text-transform: uppercase;
+   font-weight: 800;
+   }
+   
+   .overlay p {
+      color: black;
+      font-size: 3vw;
+   }
 
    #page7{
       height:fit-content;
@@ -1560,7 +1600,7 @@ font-weight: 800;
    }
    #left-page7{
       height:auto;
-      width: fit-content;
+      width: max-content;
    display: flex;
    align-items: center;
    justify-content: center;

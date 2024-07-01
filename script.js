@@ -40,7 +40,7 @@ targetDiv.addEventListener('mouseenter', () => {
 targetDiv.addEventListener('mouseleave', () => {
   crsr.style.scale=1
   crsr.style.border = "1px solid #fff"
-  crsr.style.backgroundColor = "red"
+  crsr.style.backgroundColor = "green"
   crsr.innerHTML = '';
   
 
@@ -67,7 +67,7 @@ targetDiv4.addEventListener('mouseenter', () => {
 targetDiv4.addEventListener('mouseleave',  () => {
   crsr.style.scale=1
   crsr.style.border = "1px solid #fff"
-  crsr.style.backgroundColor = "#25D366"
+  crsr.style.backgroundColor = "green"
   crsr.innerHTML = '';
   
 
@@ -94,7 +94,7 @@ targetDiv5.addEventListener('mouseenter', () => {
 targetDiv5.addEventListener('mouseleave', () => {
   crsr.style.scale=1
   crsr.style.border = "1px solid #fff"
-  crsr.style.backgroundColor = "red"
+  crsr.style.backgroundColor = "green"
   crsr.innerHTML = '';
   
 
@@ -506,5 +506,3 @@ document.getElementById('back-page7').addEventListener('click', function() {
 
 
 // pge5exp scroll in horozontal direction 
-
-
