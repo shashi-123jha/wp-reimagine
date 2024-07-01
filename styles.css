@@ -15,14 +15,17 @@ html, body{
 
 .left-page3 a{
    text-decoration: none;
-   color: #000000;
+   font-size: 1.3vw;
+   color: black;
+   
+
    
 }
 
 .left-page3 a:hover{
-   font-size: 1.1rem;
+   font-size: 1.4vw;
    color: #24D366;
-   text-decoration:underline;
+   text-decoration: none;
 }
 
 #cursor{
@@ -244,7 +247,7 @@ overflow: hidden;
 
  /* Hover effect */
  .button:hover {
-   background-color: #0056b3;
+   background-color:#1b983c;
  }
 
  #page1{
@@ -916,13 +919,28 @@ from {
 
 }
 #txt h1 {
-   font-size: 4vw;
+   font-size: 3.4vw;
+   line-height: 4vw;
 }
 #txt p {
-   font-size: 1.5vw;
+   font-size: 1.1vw;
 }
 #green{
    color: #25D366;
+}
+#txt a{
+   text-decoration: none;
+   font-size: 1.3vw;
+   color:whitesmoke;
+   
+
+   
+}
+
+#txt a:hover{
+   font-size: 1.4vw;
+   color: #24D366;
+   text-decoration: none;
 }
 
 
@@ -930,15 +948,15 @@ from {
    height: 40vh;
    width: 50vw;
    color: rgba(245, 222, 179, 0.892);
-   
-   margin-right: 10%;  
+   padding-bottom: 60vh !important;
+   margin-right: 8%;  
 }
 
 @media (max-width: 568px) {
 
  
    #page4{
-      height: 100vh;
+      height: auto;
       width: 100vw;
      
 
@@ -1130,7 +1148,7 @@ to {
  .left-page5{
     top: 10vh;
     height:100vh;
-    width:45vw;
+    width:50vw;
     padding-left: 5vw;
     padding-right: 2vw;
     padding-top: 15vh;
@@ -1159,10 +1177,10 @@ to {
  }
  #chat-call-img{
   height: 100vh;
-  width: 55vw;
+  width: 50vw;
   padding-top: 4vw;
   padding-left: 15vw;
-  padding-right: 15vw;
+  padding-right: 18vw;
   align-items: center;
   justify-content: flex-end;
  
@@ -1185,15 +1203,17 @@ to {
 }
 #page5 a {
    text-decoration: none;
+   font-size: 1.3vw;
+   color: black;
 }
 #page5 a:hover{
-   font-size: 1.1rem;
+   font-size: 1.4vw;
    color: rgb(107, 164, 21);
 
 }
 
 #page6 a:hover{
-   font-size: 1.1rem;
+   font-size: 1.4vw;
    color: rgb(107, 164, 21);
 
 }
@@ -1219,7 +1239,7 @@ to {
 
 .content-page6{
    height: 100vh;
-   width:45vw;
+   width:53vw;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -1230,15 +1250,15 @@ to {
 
 .cont-page6{
    height: 30vh;
-   width:45vw;
+   width:50vw;
    padding-left: 4vw;
    padding-right: 6vw;
    color: #000;
 }
 
 .cont-page6 h1{
-   font-size: 4.5vw;
-   font-weight: 300;
+   font-size: 4vw;
+   font-weight: 500;
    padding-bottom: 2rem;
    color: #000;
    line-height: 5vw;
@@ -1253,6 +1273,7 @@ to {
 
 .cont-page6 a{
    padding-bottom: 2rem;
+   font-size: 1.3vw;
    color: #000;
    text-decoration: none;
 }
@@ -2052,6 +2073,22 @@ span{
    height: 10vhv;
    width: 29vw;
    font-size: larger;
+   margin-bottom: 2vh;
+   }
+   #content01pg09 a{
+      text-decoration: none;
+      font-size: 1.3vw;
+      color:black;
+   
+      
+   
+      
+   }
+   
+   #content01pg09 a:hover{
+      font-size: 1.4vw;
+      color: #24D366;
+      text-decoration: none;
    }
 
    @media (max-width:1100px){
