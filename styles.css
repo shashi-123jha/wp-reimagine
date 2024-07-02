@@ -686,15 +686,23 @@ padding: 5vw;
    justify-content: center;
    font-family: Arial, Helvetica, sans-serif;
 }
+#page3 a {
+   text-decoration: none;
+   font-size: 1.3vw;
+   color: black;
+}
+#page3 a:hover{
+   font-size: 1.4vw;
+   color: #14a94d;
+
+}
 .left-page3 h1{
    font-size: 4.5vw;
    font-weight: 300;
    line-height: 5vw;
 }
 .left-page3 :hover{
-   padding-left: 8px;
-
-   
+   padding-left: 8px; 
 }
 
 
@@ -1208,15 +1216,10 @@ to {
 }
 #page5 a:hover{
    font-size: 1.4vw;
-   color: rgb(107, 164, 21);
+   color: #14a94d;
 
 }
 
-#page6 a:hover{
-   font-size: 1.4vw;
-   color: rgb(107, 164, 21);
-
-}
   
 
 #page6{
@@ -1271,9 +1274,9 @@ to {
    color: #000;
 }
 
-.cont-page6 a{
+#page6 a{
    padding-bottom: 2rem;
-   font-size: 1.3vw;
+   font-size: 1.4vw;
    color: #000;
    text-decoration: none;
 }
@@ -1296,9 +1299,9 @@ to {
    width:45vw;
 }
 
-.cont-page6 a:hover{
-   font-size: 1.1rem;
-   color: rgb(107, 164, 21);
+#page6 a:hover{
+   font-size: 2 rem;
+   color: #14a94d;
 
 }
 
@@ -1564,6 +1567,7 @@ padding-bottom: 2vh;
 .overlay h4 {
    color: black;
 font-size: 40px;
+line-height: 2vw;
 white-space: nowrap;
 margin-bottom: 20px;
 text-transform: uppercase;
