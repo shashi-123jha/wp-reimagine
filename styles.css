@@ -1282,34 +1282,36 @@ to {
 
 .content-page6{
    height: 100vh;
-   width:53vw;
+   width:60vw;
    display: flex;
    justify-content: center;
    align-items: center;
    padding-right: 10vw;
+   
 }
 
 
 
 .cont-page6{
    height: 30vh;
-   width:50vw;
+   width:60vw;
    padding-left: 4vw;
    padding-right: 6vw;
    color: #000;
 }
 
 .cont-page6 h1{
-   font-size: 4vw;
+   font-size: 3.7vw;
    font-weight: 500;
    padding-bottom: 2rem;
+   padding-right: 7vw;
    color: #000;
-   line-height: 5vw;
+   line-height: 4vw;
 }
 
 .cont-page6 p{
    padding-bottom: 2vw;
-   font-size: 1.5vw;
+   font-size: 1.7rem;
    font-family: Arial, Helvetica, sans-serif;
    color: #000;
 }
@@ -1321,13 +1323,15 @@ to {
    text-decoration: none;
 }
 
+
 .bx-page6{
    height: 100vh;
-   width:100vw;
+   width:50vw;
    display: flex;
    
    align-items: center;
    padding:4vw 15vw 0 15vw;
+   /* padding-right: 2vw; */
    align-items: center;
    justify-content: center;
 }
@@ -1380,16 +1384,34 @@ to {
     padding-bottom: 0 !important;
    }
    .cont-page6 h1{
-       font-size: 8vw;
-       font-weight: 350;
-       padding-bottom: 0.8rem;
+       font-size: 7vw;
+       font-weight:450;
+       padding-bottom: 2vw;
        color: #000;
        line-height: 9vw;
+       padding-left: 8vw;
+       padding-right: 8vw;
    }
    .cont-page6 p{
   
    color: #000;
    font-size: 4vw;
+   padding-left: 8vw;
+       padding-right: 8vw;
+   }
+   #page6 a {
+      text-decoration: none;
+      font-size: 3vw;
+      color: black;
+      padding-left: 8vw;
+       padding-right: 8vw;
+   }
+   #page6 a:hover{
+      font-size:3.2vw;
+      color: #14a94d;
+      padding-left: 8vw;
+       padding-right: 8vw;
+   
    }
    .bx-page6 img{
 
@@ -1973,11 +1995,10 @@ padding: 2vw;
 .left-page3{
    height:30vh;
    width:100vw;
-
+   padding-top: 8vh;
    padding-left: 15vw;
    padding-right: 15vw;
-   align-items: center;
-   justify-content: center;
+   
   
  
  
@@ -2002,7 +2023,16 @@ span{
    font-size: 1rem;
    
 }
+#page3 a {
+   text-decoration: none;
+   font-size: 3vw;
+   color: black;
+}
+#page3 a:hover{
+   font-size: 3.2vw;
+   color: #14a94d;
 
+}
 
         
 #page5{
@@ -2022,13 +2052,15 @@ span{
    padding-right: 15vw;
    align-items: flex-start;
    padding-bottom: 27vh;
+   padding-top: 5vh;
  
 }
 .left-page5 h1{
    font-size: 2.8rem;
    font-weight: lighter;
    font-family: Arial, Helvetica, sans-serif;
-   line-height: 4.9vh;
+   line-height: 4.3vh;
+   padding-bottom: 2vh;
    
    
 }
@@ -2037,6 +2069,16 @@ span{
    
    
    font-size: 1rem;
+}
+#page5 a {
+   text-decoration: none;
+   font-size: 3vw;
+   color: black;
+}
+#page5 a:hover{
+   font-size: 3.2vw;
+   color: #14a94d;
+
 }
 
 
@@ -2062,8 +2104,8 @@ span{
 
 @media (max-width:765px) {
    #video-call-img img{
-      height: 50vh;
-      width: 41vw;
+      height: 60vh;
+      width: 45vw;
       padding-top: 7vh;
    
    }
@@ -2093,7 +2135,7 @@ span{
    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
    border:0.3vh solid black;
    border-radius: 3vh;
- cursor: pointer;
+    cursor: pointer;
 
    
    }
@@ -2112,10 +2154,11 @@ span{
    font-size: 8vh;
    font-weight: 500;
    color: rgb(37 211 102);
+   padding-bottom: 1vw;
    }
 
    #description01pg09{
-   height: 10vhv;
+   height: 5vhv;
    width: 29vw;
    font-size: x-large;
    margin-bottom: 2vh;
@@ -2188,6 +2231,20 @@ span{
       padding: 5vw;
 
    }
+   #content01pg09 a {
+      text-decoration: none;
+      font-size:3vw;
+      padding: 5vw;
+      color: black;
+      padding-top: 1vw;
+   }
+   #content01pg09 a:hover{
+      font-size:3.2vw;
+      color: #14a94d;
+      padding: 5vw;
+      padding-top: 1vw;
+   
+   }
 
    }
 
@@ -2195,25 +2252,41 @@ span{
 
 
       #heading01pg09{
-         font-size: 5vh;
+         font-size: 6vh;
          color: rgb(37 211 102);
+         font-weight: 600;
          align-items: center;
        padding-left: 2vw;
+       padding-top: 5vw;
          }
       
          #description01pg09{
          height: 10vhv;
          width: 100vw;
-         font-size: 2.7vw;
+         font-size: 3.2vw;
          padding: 5vw;
          padding-right: 8vw;
          }
+         #content01pg09 a {
+            text-decoration: none;
+            font-size:3vw;
+            padding: 5vw;
+            color: black;
+         }
+         #content01pg09 a:hover{
+            font-size:3.2vw;
+            color: #14a94d;
+            padding: 5vw;
+            padding-top: 1vw;
+         
+         }
+         
       
          #content01pg09{
             height: 35vh;
             width: 100%;
             padding: 5vw;
-            margin-bottom: 10vh;
+           padding-top: 1vw;
             
       
          }
