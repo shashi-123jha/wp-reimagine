@@ -247,7 +247,7 @@ overflow: hidden;
 
  /* Hover effect */
  .button:hover {
-   background-color:#1b983c;
+   background-color:#FCF5EB;
  }
 
  #page1{
@@ -317,9 +317,9 @@ padding: 2vw;
 
  #page1 h3{
    font-size: 3vw;
-   font-weight: 900;
+   font-weight: 600;
    position: relative;
-   color: #037e30;
+   color: #25D366;
    display: inline-block;
 
   
@@ -330,8 +330,8 @@ padding: 2vw;
    content: "Chat, Connect, Share!";
    position: absolute;
    color:#103928;
-   top: -2px;
-   left: -2px;
+   top: -3px;
+   left: -3px;
    -webkit-text-stroke: 3px #86AF1C;
    z-index: -1;
 }
@@ -2021,7 +2021,7 @@ font-weight: 800;
  #arrow1 i{
    font-size: 50px;
 font-weight: 800px;
-
+color: white;
 padding: 2vw;
 }
 
