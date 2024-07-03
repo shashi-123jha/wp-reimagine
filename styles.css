@@ -427,7 +427,8 @@ padding: 2vw;
    #nav-bar{
       height: 10vh;
       width: 100%;
-      background-color: #FCF5EB;
+      background-color: transparent;
+     
       position: fixed;
       z-index: 99;
       display: flex;
@@ -468,7 +469,7 @@ padding: 2vw;
    
   #logo img {
    font-size: 10vw;
-font-weight: 400;
+font-weight: 600;
 height: 4vh;
 width: 4vh;
 
@@ -477,7 +478,7 @@ width: 4vh;
       display: inline-block;
    overflow: hidden;
    font-weight: 800;
-   font-size: 4vw;
+   font-size: 3.6vw;
   
    
    }
@@ -551,9 +552,10 @@ width: 4vh;
 
    #full h4{
 
-      margin-bottom: 3vw;
+      margin-bottom: 6vw;
       border: 2px solid green;
       padding: 1vw;
+      margin-top: 3vh;
 
    }
  
@@ -571,9 +573,44 @@ width: 4vh;
      
       padding: 0.7vw;
       font-weight: 800;
-      font-size: 6vw;
+      font-size: 8vw;
       cursor: pointer;
    }
+#meta{
+   height: auto;
+   width: 100%;
+   margin-top:3vh;
+}
+#meta h2{
+   font-size: 5.5vw;
+   font-weight: 300;
+   font-family: Arial, Helvetica, sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#imgmeta {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   padding: 5vw;
+
+}
+   #metaimg{
+      top: 90%;
+      height: 30vw;
+      width: 30vw ;
+   }
+
+   #wpl {
+      top: 90%;
+      height: 17vw;
+      width: 17vw ;
+   }
+
+
 
 
 
