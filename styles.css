@@ -259,7 +259,7 @@ overflow: hidden;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-   padding-top: 40vh;
+   padding-top: 30vh;
         text-align: center;
         background-color: #fdf7ef0b;
         padding-bottom: 3vh;
@@ -299,7 +299,7 @@ overflow: hidden;
 #page1 #arrow i{
    font-size: 50px;
 font-weight: 800px;
-
+color: white;
 padding: 2vw;
 }
 
@@ -316,12 +316,37 @@ padding: 2vw;
 
 
  #page1 h3{
-   font-size: 4vw;
-   font-weight: 600;
-   color: #000000;
+   font-size: 3vw;
+   font-weight: 900;
+   position: relative;
+   color: #037e30;
+   display: inline-block;
+
   
 
  }
+
+ #outline h3::before{
+   content: "Chat, Connect, Share!";
+   position: absolute;
+   color:#103928;
+   top: -2px;
+   left: -2px;
+   -webkit-text-stroke: 3px #86AF1C;
+   z-index: -1;
+}
+
+
+ #page1 h1::before{
+   content: "WhatsApp.";
+   position: absolute;
+   color: black;
+   top: -8px;
+   left: -6px;
+   -webkit-text-stroke: 3px #86AF1C;
+   z-index: -1;
+}
+ 
  #page1 h1 {
    
    font-size: 11vw;
@@ -344,18 +369,11 @@ padding: 2vw;
 
  padding: 2vh;
  margin-bottom: 2vh;
- display: none;
+
 }
-#page1 h1::before{
-   content: "WhatsApp.";
-   position: absolute;
-   color: black;
-   top: -6px;
-   left: -6px;
-   -webkit-text-stroke: 3px #86AF1C;
-   z-index: -1;
-}
- 
+
+
+
  #baa video {
    height: 100vh;
    width: 100%;
@@ -583,7 +601,7 @@ width: 4vh;
    margin-top:3vh;
 }
 #meta h2{
-   font-size: 5.5vw;
+   font-size: 6vw;
    font-weight: 300;
    font-family: Arial, Helvetica, sans-serif;
    display: flex;
@@ -596,21 +614,17 @@ width: 4vh;
    display: flex;
    align-items: center;
    justify-content: space-around;
+   flex-direction: column;
    padding: 5vw;
 
 }
    #metaimg{
       top: 90%;
       height: 30vw;
-      width: 30vw ;
+      width: 60vw ;
    }
 
-   #wpl {
-      top: 90%;
-      height: 17vw;
-      width: 17vw ;
-   }
-
+ 
 
 
 
