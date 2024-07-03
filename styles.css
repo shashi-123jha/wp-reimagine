@@ -344,6 +344,7 @@ padding: 2vw;
 
  padding: 2vh;
  margin-bottom: 2vh;
+ display: none;
 }
 #page1 h1::before{
    content: "WhatsApp.";
@@ -1752,7 +1753,7 @@ font-weight: 800;
    justify-content: center;
    flex-direction: column;
    padding-left: 4vw;
-   padding-right: 2vw;
+   padding-right: 5vw;
    color: white;
    
    background-color: #0B141A;
@@ -2063,10 +2064,10 @@ padding: 2vw;
  
 }
 .left-page3 h1{
-   font-size: 2.5rem;
-   font-weight: lighter;
+   font-size: 2.3rem;
+   font-weight: 450;
    font-family: Arial, Helvetica, sans-serif;
-   line-height: 4.9vh;
+   line-height: 4.6vh;
    
    
 }
@@ -2115,7 +2116,7 @@ span{
 }
 .left-page5 h1{
    font-size: 2.8rem;
-   font-weight: lighter;
+   font-weight: 450;
    font-family: Arial, Helvetica, sans-serif;
    line-height: 4.3vh;
    padding-bottom: 2vh;
@@ -2166,6 +2167,7 @@ span{
       width: 45vw;
       padding-top: 10vh;
       margin-top: 3vh;
+      padding-bottom: 4vh;
    
    }
    #video-call-img{
