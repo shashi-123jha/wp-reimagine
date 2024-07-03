@@ -876,6 +876,9 @@ padding: 5vw;
   
 }
 
+
+
+
 #scroller{
       
    white-space: nowrap;
@@ -976,6 +979,16 @@ from {
    color: rgba(245, 222, 179, 0.892);
    
    margin-right: 8%;  
+}
+#txt a {
+   text-decoration: none;
+   font-size: 1.5vw;
+   color:white;
+}
+#txt a:hover{
+   font-size: 1.7vw;
+   color: #14a94d;
+
 }
 
 @media (max-width: 768px) {
@@ -1148,6 +1161,16 @@ from {
    #txt p {
       font-size: 3vw;
       padding-right: 10vw;
+   }
+   #txt a {
+      text-decoration: none;
+      font-size: 1.5vw;
+      color:white;
+   }
+   #txt a:hover{
+      font-size: 1.7vw;
+      color: #14a94d;
+   
    }
    #green{
       color: #25D366;
