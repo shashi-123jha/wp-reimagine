@@ -270,7 +270,7 @@ tl.to("#full",{
 
 })
 
-tl.from("#full h4",{
+tl.from("#full h4 , #meta",{
   y:140,
   duration:0.7,
   stagger:0.2,
