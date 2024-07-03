@@ -862,8 +862,7 @@ padding: 5vw;
    position: relative;
    align-items: center;
    justify-content: space-around;
-   z-index: 9;
-   background-image: url(./images/back\ black.png);
+   z-index: 10;
 }
 
 #page4-main{
@@ -884,9 +883,8 @@ padding: 5vw;
    overflow-y: hidden;
    position: relative;
    z-index: 10;
-   margin-bottom: 9vh;
-   padding: 3vh;
-   
+   padding: 1vw;
+   margin-bottom: 5vw;
 
 
 }
@@ -917,7 +915,7 @@ padding: 5vw;
 
 #scroller h4 {
    display: inline-block;
-   font-size: 90px;
+   font-size: 65px;
    font-weight:800;
 margin-right: 10px;
 -webkit-text-stroke: 1px #fcf5eb7e ;
@@ -946,131 +944,210 @@ from {
 
 .left-page4{
    height: 60vh;
-   width: 60vw;
+   width: 50vw;
   margin-left: 6%;
    display: flex;
    align-items: center;
    justify-content: center;
    margin-right: 10vw;
- cursor: pointer;
-
    
    
 }
 #txt{
-   height: 70vh;
-   width: 40vw;
+   height: 55vh;
+   width: 45vw;
    
 
 }
 #txt h1 {
-   font-size: 3.4vw;
-   line-height: 4vw;
+   font-size: 3vw;
 }
 #txt p {
-   font-size: 1.1vw;
+   font-size: 1.3vw;
 }
 #green{
    color: #25D366;
 }
-#txt a{
-   text-decoration: none;
-   font-size: 1.3vw;
-   color:whitesmoke;
-   
-
-   
-}
-
-#txt a:hover{
-   font-size: 1.4vw;
-   color: #24D366;
-   text-decoration: none;
-}
 
 
 .right-page4{
-   height: 40vh;
+   height: 60vh;
    width: 50vw;
    color: rgba(245, 222, 179, 0.892);
-   padding-bottom: 60vh !important;
+   
    margin-right: 8%;  
 }
 
 @media (max-width: 568px) {
 
- 
    #page4{
-      height: auto;
-      width: 100vw;
-     
-
+      height: 110vh;
+      width: 100%;
+      background-color: #111b21f6;
+      position: relative;
+      align-items: center;
+      justify-content: space-around;
+      z-index: 10;
    }
-
+   
    #page4-main{
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column-reverse;
-      height: 78vh;
+     height: auto;
+     padding-top: 1vh;
+     padding-bottom: 1vh;
+    
      
+   }
    
-      
-
-     }
-
-     #scroller{
-      
+   #scroller{
+         
       white-space: nowrap;
       overflow-x: auto;
       overflow-y: hidden;
       position: relative;
       z-index: 10;
-      margin-bottom: 1vh;
-      padding: 2vh;
-      height: 10vh;
-      
+      padding: 1vw;
+      margin-bottom: 0.8vw;
    
    
    }
    
+   #scroller::-webkit-scrollbar{
+      display: none;
+   }
+   
+   
+   #scroller-in{
+      display: inline-block;
+      white-space: nowrap;
+   
+   }
+   
+   #scroller-in{
+      display: inline-block;
+      white-space: nowrap;
+      animation-name: scroll;
+      animation-duration: 30s;
+      animation-timing-function: linear;
+      /* to make it continuous */
+      animation-iteration-count: infinite;
+   
+   
+      
+   }
    
    #scroller h4 {
       display: inline-block;
-      font-size: 13vw;
-      font-weight:500;
-
+      font-size: 60px;
+      font-weight:800;
+   margin-right: 10px;
+   -webkit-text-stroke: 1px #fcf5eb7e ;
+   color: transparent;
+   transition: all linear 0.5s;
+   
    }
-
+   
+   #scroller h4:hover {
+      color: #86AF1C;
+   
+   }
+   
+   #scroller-last{
+         
+      white-space: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      position: relative;
+      z-index: 10;
+     
+      margin-bottom: 5vw;
+   
+   
+   }
+   
+   #scroller::-webkit-scrollbar{
+      display: none;
+   }
+   
+   
+   #scroller-in-last{
+      display: inline-block;
+      white-space: nowrap;
+   
+   }
+   
+   #scroller-in-last{
+      display: inline-block;
+      white-space: nowrap;
+      animation-name: scroll;
+      animation-duration: 30s;
+      animation-timing-function: linear;
+      /* to make it continuous */
+      animation-iteration-count: infinite;
+   
+   
+      
+   }
+   
+   #scroller-in-last h4 {
+      display: inline-block;
+      font-size: 60px;
+      font-weight:800;
+   margin-right: 10px;
+   -webkit-text-stroke: 1px #fcf5eb7e ;
+   color: transparent;
+   transition: all linear 0.5s;
+   
+   }
+   
+   #scroller-in-last h4:hover {
+      color: #86AF1C;
+   
+   }
+   
+   
+   
+   @keyframes scroll {
+   from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+   }
+   
+   
    .left-page4{
-      height: 40vh;
+      height: 38vh;
       width: 100vw;
-      align-items: center;
-      justify-content: center;
-      padding-top: 3vh;
- 
+  
+      
+      
    }
+
    .left-page4 img {
-      height: 40vh;
-      width: 70vw;
-      padding-top: 3vh;
+      height: 38vh;
+      width: 80vw;
    }
    #txt{
       height: 25vh;
-      width: 90vw;
-      padding-left: 25vw;
-      padding-top: 25vh;
-
-
-      
+      width: 95vw;
+      margin-left: 8vw;
+      padding-left: 6vw;
+      margin-right: 9vw;
    
    }
    #txt h1 {
+      padding-left: 2vw;
+      padding-right: 2vw;
       font-size: 8vw;
-      line-height: 2.3rem;
    }
    #txt p {
       font-size: 3vw;
+      padding-right: 10vw;
    }
    #green{
       color: #25D366;
@@ -1078,38 +1155,15 @@ from {
    
    
    .right-page4{
-      height: 28vh;
+      height: 40vh;
       width: 100vw;
       color: rgba(245, 222, 179, 0.892);
-      padding-bottom: 15vh;
-
-      
-      
-      
-   }   
-
-
-   #scroller-in-last h4 {
-      display: inline-block;
-      font-size: 13vw !important;
-      font-weight:500;
-     
-
+   margin-bottom: 2vh;
    
-   }
-
-   #scroller-last{
       
-      white-space: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      position: relative;
-      z-index: 10;
-      margin-bottom: 3vh;
-      padding: 2vh;
-      height: 10vh;
+
+     
    }
-  
 }
 
 
@@ -1121,6 +1175,7 @@ from {
    position: relative;
    z-index: 10;
    padding: 1vw;
+   margin-top: 4vw;
 
   
 
@@ -1154,7 +1209,7 @@ from {
 
 #scroller-last h4 {
    display: inline-block;
-   font-size: 90px;
+   font-size: 65px;
    font-weight:800;
 margin-right: 10px;
 -webkit-text-stroke: 1px #fcf5eb7e ;
@@ -1177,8 +1232,6 @@ to {
    transform: translateX(-100%);
  }
 }
-
-
 
 
 
