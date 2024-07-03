@@ -1165,11 +1165,11 @@ from {
    }
    #txt a {
       text-decoration: none;
-      font-size: 1.5vw;
+      font-size:3vw;
       color:white;
    }
    #txt a:hover{
-      font-size: 1.7vw;
+      font-size: 3.2vw;
       color: #14a94d;
    
    }
